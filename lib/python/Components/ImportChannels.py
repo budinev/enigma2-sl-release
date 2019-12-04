@@ -2,7 +2,7 @@ import threading, urllib2, os, shutil
 from json import loads
 from enigma import eDVBDB, eEPGCache
 from Screens.MessageBox import MessageBox
-from config import config
+from config import config, ConfigText
 from Tools import Notifications
 from base64 import encodestring
 
@@ -32,9 +32,10 @@ class ImportChannels():
 
 	def threaded_function(self):
 		if "epg" in config.usage.remote_fallback_import.value:
+			config.misc.epgcache_filename = ConfigText(default="/epg.dat")
 			print "Writing epg.dat file on sever box"
 			try:
-				self.getUrl("%s/web/saveepg" % self.url, 30).read()
+				self.getUrl("%s/web/saveepg" % self.url, timeout=30).read()
 			except:
 				self.ImportChannelsDone(False, _("Error when writing epg.dat on server"))
 				return
@@ -53,7 +54,7 @@ class ImportChannels():
 			if epg_location:
 				print "[Import Channels] Copy EPG file..."
 				try:
-					open("/hdd/epg.dat" if os.path.isdir("/hdd") else "/epg.dat", "wb").write(self.getUrl("%s/file?file=%s" % (self.url, epg_location)).read())
+					open(config.misc.epgcache_filename.value, "wb").write(self.getUrl("%s/file?file=%s" % (self.url, epg_location)).read())
 				except:
 					self.ImportChannelsDone(False, _("Error while retreiving epg.dat from server"))
 			else:
@@ -66,9 +67,7 @@ class ImportChannels():
 			print "[Import Channels] reading dir"
 			try:
 				files = [file for file in loads(self.getUrl("%s/file?dir=/etc/enigma2" % self.url).read())["files"] if os.path.basename(file).startswith(settingfiles)]
-				count = 0
 				for file in files:
-					count += 1
 					file = file.encode("UTF-8")
 					print "[Import Channels] Downloading %s" % file
 					destination = "/tmp/tmp"
@@ -90,10 +89,10 @@ class ImportChannels():
 			for file in files:
 				shutil.move("/tmp/tmp/%s" % file, "/etc/enigma2/%s" % file)
 			os.rmdir("/tmp/tmp")
-		self.ImportChannelsDone(True)
+		self.ImportChannelsDone(True, {"channels": _("Channels"), "epg": _("EPG"), "channels_epg": _("Channels and EPG")}[config.usage.remote_fallback_import.value])
 
-	def ImportChannelsDone(self, flag, errorstring=None):
+	def ImportChannelsDone(self, flag, message=None):
 		if flag:
-			Notifications.AddNotificationWithID("ChannelsImportOK", MessageBox, _("Channels from fallback tuner imported"), type=MessageBox.TYPE_INFO, timeout=5)
+			Notifications.AddNotificationWithID("ChannelsImportOK", MessageBox, _("%s imported from fallback tuner") % message, type=MessageBox.TYPE_INFO, timeout=5)
 		else:
-			Notifications.AddNotificationWithID("ChannelsImportNOK", MessageBox, _("Channels from fallback tuner failed %s") % errorstring, type=MessageBox.TYPE_ERROR, timeout=5)
+			Notifications.AddNotificationWithID("ChannelsImportNOK", MessageBox, _("Import from fallback tuner failed, %s") % message, type=MessageBox.TYPE_ERROR, timeout=5)

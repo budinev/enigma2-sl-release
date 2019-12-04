@@ -471,7 +471,7 @@ RESULT eStaticServiceDVBPVRInformation::getEvent(const eServiceReference &ref, e
 {
 	if (!ref.path.empty())
 	{
-		if (ref.path.substr(0, 7) == "http://")
+		if (ref.path.find("://") != std::string::npos)
 		{
 			eServiceReference equivalentref(ref);
 			/* this might be a scrambled stream (id + 0x100), force equivalent dvb type */
@@ -926,7 +926,7 @@ RESULT eServiceFactoryDVB::play(const eServiceReference &ref, ePtr<iPlayableServ
 
 RESULT eServiceFactoryDVB::record(const eServiceReference &ref, ePtr<iRecordableService> &ptr)
 {
-	bool isstream = ref.path.substr(0, 7) == "http://";
+	bool isstream = ref.path.find("://") != std::string::npos;
 	ptr = new eDVBServiceRecord((eServiceReferenceDVB&)ref, isstream);
 	return 0;
 }
@@ -1017,7 +1017,7 @@ eDVBServicePlay::eDVBServicePlay(const eServiceReference &ref, eDVBService *serv
 	m_have_video_pid(0),
 	m_tune_state(-1),
 	m_noaudio(false),
-	m_is_stream(ref.path.substr(0, 7) == "http://"),
+	m_is_stream(ref.path.find("://") != std::string::npos),
 	m_is_pvr(!ref.path.empty() && !m_is_stream),
 	m_is_paused(0),
 	m_timeshift_enabled(0),
@@ -2340,7 +2340,7 @@ bool eDVBServiceBase::tryFallbackTuner(eServiceReferenceDVB &service, bool &is_s
 {
 	ePtr<eDVBResourceManager> res_mgr;
 	std::ostringstream remote_service_ref;
-	std::string remote_service_args;
+	std::string remote_service_args, remote_fallback_url;
 	eDVBChannelID chid, chid_ignore;
 	int system;
 	size_t index;
@@ -2351,19 +2351,38 @@ bool eDVBServiceBase::tryFallbackTuner(eServiceReferenceDVB &service, bool &is_s
 	if (!eConfigManager::getConfigBoolValue("config.usage.remote_fallback_enabled", false))
 		return false;
 
-	std::string remote_fallback_url =
-		eConfigManager::getConfigValue("config.usage.remote_fallback");
-
-	if (remote_fallback_url.empty() && !getAnyPeerStreamingBox(remote_fallback_url))
-		return false;
-
 	if (eDVBResourceManager::getInstance(res_mgr))
 		return false;
-
 	service.getChannelID(chid); 						// this sets chid
 	eServiceReferenceDVB().getChannelID(chid_ignore);	// this sets chid_ignore
-
 	if(res_mgr->canAllocateChannel(chid, chid_ignore, system))	// this sets system
+		return false;
+
+	if (eConfigManager::getConfigBoolValue("config.usage.remote_fallback_alternative", false) && !(system == iDVBFrontend::feSatellite))
+	{
+		switch (system)
+		{
+			case iDVBFrontend::feTerrestrial:
+			{
+				remote_fallback_url = eConfigManager::getConfigValue("config.usage.remote_fallback_dvb_t");
+				break;
+			}
+			case iDVBFrontend::feCable:
+			{
+				remote_fallback_url = eConfigManager::getConfigValue("config.usage.remote_fallback_dvb_c");
+				break;
+			}
+			case iDVBFrontend::feATSC:
+			{
+				remote_fallback_url = eConfigManager::getConfigValue("config.usage.remote_fallback_atsc");
+				break;
+			}
+		}
+	}
+	else
+		remote_fallback_url = eConfigManager::getConfigValue("config.usage.remote_fallback");
+
+	if (remote_fallback_url.empty() && !getAnyPeerStreamingBox(remote_fallback_url))
 		return false;
 
 	while((index = remote_fallback_url.find(':')) != std::string::npos)

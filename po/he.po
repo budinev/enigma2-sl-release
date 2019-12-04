@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 10:12+0200\n"
+"POT-Creation-Date: 2019-11-30 07:47+0100\n"
 "PO-Revision-Date: 2012-03-08 10:40+0330\n"
 "Last-Translator: \n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -23,13 +23,6 @@ msgstr ""
 
 msgid ""
 "\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"אפשרויות מתקדמות והגדרות"
-
-msgid ""
-"\n"
 "After pressing OK, please wait!"
 msgstr ""
 "\n"
@@ -37,30 +30,7 @@ msgstr ""
 
 msgid ""
 "\n"
-"Backup your receiver settings."
-msgstr ""
-
-msgid ""
-"\n"
 "Conflict detection disabled!"
-msgstr ""
-
-#
-msgid ""
-"\n"
-"Edit the upgrade source address."
-msgstr ""
-"\n"
-"ערוך את כתובת מקור העדכון"
-
-msgid ""
-"\n"
-"Manage extensions or plugins for your receiver"
-msgstr ""
-
-msgid ""
-"\n"
-"Online update of your receiver software."
 msgstr ""
 
 #
@@ -83,48 +53,11 @@ msgid ""
 "Recording in progress."
 msgstr ""
 
-#
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"שיחזור גיבויים לפי תאריך"
-
-msgid ""
-"\n"
-"Restore your receiver settings."
-msgstr ""
-
-#
-msgid ""
-"\n"
-"Scan for local extensions and install them."
-msgstr ""
-"\n"
-"סרוק לתוספות מקומיות והתקן אותם"
-
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-".בחר את התקן הגיבוי\n"
-":ההתקן הנוכחי "
-
 #, python-format
 msgid ""
 "\n"
 "Timer '%s' disabled!"
 msgstr ""
-
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-".הצג, התקן או הסר חבילות זמינות או מותקנות "
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -187,6 +120,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -407,6 +348,10 @@ msgstr "מקום פנוי בכונן הקשיח"
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
+
+#, python-format
+msgid "%s imported from fallback tuner"
+msgstr ""
 
 #. TRANSLATORS: The satellite with name '%s' is no longer used after a configuration change. The user is asked whether or not the satellite should be deleted.
 #, python-format
@@ -776,6 +721,17 @@ msgstr ""
 msgid "Abort"
 msgstr "חדל"
 
+msgid "Abort alternatives edit"
+msgstr "Abort alternatives edit"
+
+#
+msgid "Abort bouquet edit"
+msgstr "Abort bouquet edit"
+
+#
+msgid "Abort favourites edit"
+msgstr "Abort favourites edit"
+
 #
 msgid "About"
 msgstr "אודות"
@@ -834,9 +790,18 @@ msgstr "add a nameserver entry"
 msgid "Add a new title"
 msgstr "הוסף כותרת חדשה"
 
+msgid "Add alternatives"
+msgstr "Add alternatives"
+
 #, fuzzy
 msgid "Add bookmark"
 msgstr "add bookmark"
+
+msgid "Add bouquet"
+msgstr "Add bouquet"
+
+msgid "Add bouquet to parental protection"
+msgstr ""
 
 #, fuzzy
 msgid "Add directory to playlist"
@@ -849,6 +814,9 @@ msgstr "add file to playlist"
 #, fuzzy
 msgid "Add files to playlist"
 msgstr "add files to playlist"
+
+msgid "Add marker"
+msgstr "הוסף סמן"
 
 #, fuzzy
 msgid "Add provider"
@@ -875,6 +843,19 @@ msgid "Add service"
 msgstr "add Service"
 
 #
+msgid "Add service to bouquet"
+msgstr "הוסף את הערוץ לתיקית הערוצים"
+
+#
+msgid "Add service to favourites"
+msgstr "הוסף את הערוץ למועדפים"
+
+#
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "הוסף את הערוץ לתיקית הערוצים"
+
+#
 msgid "Add timer"
 msgstr "הוסף טיימר"
 
@@ -888,6 +869,9 @@ msgstr "הוסף תיקיית ערוצים"
 #
 msgid "Add to favourites"
 msgstr "הוסף למועדפים"
+
+msgid "Add to parental protection"
+msgstr "הוסף לבקרת הורים"
 
 msgid "Add/remove change timer for current event"
 msgstr ""
@@ -911,6 +895,9 @@ msgstr ""
 #, fuzzy
 msgid "Advanced options"
 msgstr "אפשרויות מתקדמות"
+
+msgid "Advanced options and settings."
+msgstr "אפשרויות מתקדמות והגדרות"
 
 #
 msgid "Advanced restore"
@@ -987,6 +974,9 @@ msgstr ""
 msgid "All services provider"
 msgstr ""
 
+msgid "All slots"
+msgstr ""
+
 msgid "Allocate"
 msgstr ""
 
@@ -1035,17 +1025,20 @@ msgstr ""
 
 #, fuzzy
 msgid "Alternative"
-msgstr "add alternatives"
+msgstr "Add alternatives"
 
 #, fuzzy
 msgid "Alternative 1"
-msgstr "add alternatives"
+msgstr "Add alternatives"
 
 #, fuzzy
 msgid "Alternative 2"
-msgstr "add alternatives"
+msgstr "Add alternatives"
 
 msgid "Alternative URL for images listed on FlashImage"
+msgstr ""
+
+msgid "Alternative URLs for DVB-T/C or ATSC"
 msgstr ""
 
 #
@@ -1112,7 +1105,10 @@ msgstr ""
 msgid "Arabic"
 msgstr "ערבית"
 
-msgid "Are you sure to purge all deleted userbouquets?"
+msgid "Are you sure to purge all deleted user bouquets?"
+msgstr ""
+
+msgid "Are you sure to reboot to"
 msgstr ""
 
 #, python-format
@@ -1418,6 +1414,9 @@ msgstr "גיבוי הגדרות מערכת"
 msgid "Backup system settings"
 msgstr "גיבוי הגדרות מערכת"
 
+msgid "Backup your receiver settings."
+msgstr ""
+
 msgid "Bahamas"
 msgstr ""
 
@@ -1522,6 +1521,12 @@ msgstr ""
 #, fuzzy
 msgid "Boost green"
 msgstr "ירוק"
+
+msgid "Boot to Android image"
+msgstr ""
+
+msgid "Boot to Recovery menu"
+msgstr ""
 
 msgid "Bosnia and Herzegovina"
 msgstr ""
@@ -1653,6 +1658,24 @@ msgid "Cameroon"
 msgstr ""
 
 msgid "Can be used for different fps between external subtitles and video."
+msgstr ""
+
+msgid ""
+"Can be used to test defect pixels on TV screen.\n"
+"\n"
+"Available color test screens:\n"
+"\n"
+"red\n"
+"green\n"
+"blue\n"
+"white\n"
+"black\n"
+"cyan\n"
+"magenta\n"
+"yellow\n"
+"\n"
+"Screens change with left/right buttons or use red, green, blue to toggle.\n"
+"Yellow for returning back to this intro"
 msgstr ""
 
 msgid "Can only find a network drive to store the backup this means after the flash the autorestore will not work. Alternativaly you can mount the network drive after the flash and perform a manufacurer reset to autorestore"
@@ -1791,16 +1814,14 @@ msgstr ""
 msgid "Channelnumber, picon and servicename"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Channels"
+msgstr "ערוץ"
+
 #, fuzzy
 msgid "Channels and EPG"
 msgstr "תפריט רשימת הערוצים"
-
-#, python-format
-msgid "Channels from fallback tuner failed %s"
-msgstr ""
-
-msgid "Channels from fallback tuner imported"
-msgstr ""
 
 #
 #, fuzzy
@@ -1992,16 +2013,16 @@ msgid "Config resolution of pictures"
 msgstr ""
 
 #, fuzzy
+msgid "Configuration"
+msgstr "הגדרת רשת"
+
+#, fuzzy
 msgid "Configuration mode"
 msgstr "תצורת הגדרה"
 
 #, fuzzy, python-format
 msgid "Configuration mode: %s"
 msgstr "תצורת הגדרה"
-
-#, fuzzy
-msgid "Configuration..."
-msgstr "...הגדרת רשת"
 
 #, fuzzy
 msgid "Configure ATSC"
@@ -2416,6 +2437,9 @@ msgstr ""
 msgid "Copy"
 msgstr ""
 
+msgid "Copy to bouquets"
+msgstr "העתק לתיקית ערוצים"
+
 msgid "Costa Rica"
 msgstr ""
 
@@ -2455,6 +2479,9 @@ msgstr ""
 #
 msgid "Create DVD-ISO"
 msgstr "DVD-ISO צור "
+
+msgid "Create directory"
+msgstr "צור תיקיה"
 
 msgid "Create new folder and exit"
 msgstr ""
@@ -2644,6 +2671,10 @@ msgstr "DVD נגן"
 msgid "DVD titlelist"
 msgstr "DVD Titlelist"
 
+#, fuzzy
+msgid "DVDPlayer"
+msgstr "DVD נגן"
+
 msgid "Danish"
 msgstr "דנית"
 
@@ -2809,6 +2840,15 @@ msgstr "בטל בחירה"
 msgid "Destination of fallback remote receiver"
 msgstr ""
 
+msgid "Destination of fallback remote receiver for ATSC"
+msgstr ""
+
+msgid "Destination of fallback remote receiver for DVB-C"
+msgstr ""
+
+msgid "Destination of fallback remote receiver for DVB-T"
+msgstr ""
+
 msgid "Details for plugin: "
 msgstr ""
 
@@ -2896,6 +2936,9 @@ msgstr ""
 
 msgid "Disable current event but not coming events"
 msgstr ""
+
+msgid "Disable move mode"
+msgstr "Disable move mode"
 
 msgid "Disable timer"
 msgstr ""
@@ -3089,15 +3132,15 @@ msgstr "?האם ברצונך להמשיך ולנגן את זה"
 msgid "Do you want to select a different skin?"
 msgstr ""
 
+msgid "Do you want to update the package:\n"
+msgstr "?האם ברצונך לשדרג את החבילה\n"
+
 #, fuzzy, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "? האם ברצונך לשחזר את ההגדרות"
 
 msgid "Do you want to update your receiver?"
 msgstr ""
-
-msgid "Do you want to upgrade the package:\n"
-msgstr "?האם ברצונך לשדרג את החבילה\n"
 
 msgid "Dolby"
 msgstr ""
@@ -3127,8 +3170,8 @@ msgid "Done"
 msgstr ""
 
 #, fuzzy, python-format
-msgid "Done - Installed, upgraded or removed %d package (%s)"
-msgid_plural "Done - Installed, upgraded or removed %d packages (%s)"
+msgid "Done - Installed, updated or removed %d package (%s)"
+msgid_plural "Done - Installed, updated or removed %d packages (%s)"
 msgstr[0] "תקלות %d חבילות עם %d בוצע - הותקנו, עודכנו או הוסרו"
 msgstr[1] "תקלות %d חבילות עם %d בוצע - הותקנו, עודכנו או הוסרו"
 
@@ -3152,9 +3195,8 @@ msgstr "מוריד"
 msgid "Downloading plugin information. Please wait..."
 msgstr "...מוריד פרטים על הפלאגין, אנא המתן"
 
-#, fuzzy
 msgid "Drop unconfigured satellites"
-msgstr "remove selected satellite"
+msgstr ""
 
 #
 msgid "Dutch"
@@ -3217,8 +3259,16 @@ msgstr "ערוך"
 msgid "Edit DNS"
 msgstr "DNS ערוך"
 
+msgid "Edit alternatives"
+msgstr "Edit alternatives"
+
 msgid "Edit chapters of current title"
 msgstr "ערוך פרקים של הכותרת הנוכחית"
+
+#
+#, fuzzy
+msgid "Edit menu"
+msgstr "תפריט ראשי"
 
 #
 #, fuzzy
@@ -3236,6 +3286,10 @@ msgstr "exit nameserver configuration"
 msgid "Edit the network configuration of your receiver.\n"
 msgstr ""
 
+#
+msgid "Edit the update source address."
+msgstr "ערוך את כתובת מקור העדכון"
+
 msgid "Edit timer"
 msgstr ""
 
@@ -3243,8 +3297,8 @@ msgid "Edit title"
 msgstr "ערוך כותרת"
 
 #
-msgid "Edit upgrade source url."
-msgstr "Edit upgrade source url."
+msgid "Edit update source url"
+msgstr "Edit update source url"
 
 msgid "Education/Science/..."
 msgstr ""
@@ -3295,6 +3349,9 @@ msgstr ""
 msgid "Enable OK for channel selection"
 msgstr ""
 
+msgid "Enable OpenTV EPG"
+msgstr ""
+
 msgid "Enable ViaSat EPG"
 msgstr ""
 
@@ -3312,18 +3369,30 @@ msgid "Enable auto fast scan for %s"
 msgstr ""
 
 #
+msgid "Enable bouquet edit"
+msgstr "Enable bouquet edit"
+
+#
 #, fuzzy
 msgid "Enable bouquet selection in multi-EPG"
-msgstr "enable bouquet edit"
+msgstr "Enable bouquet edit"
 
 msgid "Enable fallback remote receiver"
 msgstr ""
+
+#
+msgid "Enable favourites edit"
+msgstr "Enable favourites edit"
 
 msgid "Enable freesat EPG"
 msgstr ""
 
 msgid "Enable import timer from fallback tuner"
 msgstr ""
+
+#
+msgid "Enable move mode"
+msgstr "Enable move mode"
 
 #
 msgid "Enable multiple bouquets"
@@ -3377,6 +3446,17 @@ msgstr "שיטת מפתח קידוד"
 
 msgid "Encryption:"
 msgstr ":קידוד"
+
+msgid "End alternatives edit"
+msgstr "End alternatives edit"
+
+#
+msgid "End bouquet edit"
+msgstr "End bouquet edit"
+
+#
+msgid "End favourites edit"
+msgstr "End favourites edit"
 
 #
 msgid "End time"
@@ -3630,9 +3710,6 @@ msgstr "צא מאשף הרשת"
 msgid "Exit the wizard"
 msgstr "צא מהאשף"
 
-msgid "Exit/OK"
-msgstr ""
-
 msgid "Expand"
 msgstr ""
 
@@ -3780,10 +3857,22 @@ msgstr ""
 msgid "Fallback remote receiver URL"
 msgstr ""
 
+msgid "Fallback remote receiver for ATSC"
+msgstr ""
+
+msgid "Fallback remote receiver for DVB-C"
+msgstr ""
+
+msgid "Fallback remote receiver for DVB-T"
+msgstr ""
+
 msgid "Fallback remote receiver setup"
 msgstr ""
 
 msgid "Fallback tuner setup"
+msgstr ""
+
+msgid "False"
 msgstr ""
 
 #
@@ -3852,6 +3941,9 @@ msgid "Final position at index"
 msgstr ""
 
 msgid "Final scroll delay"
+msgstr ""
+
+msgid "Find currently playing service"
 msgstr ""
 
 msgid "Fine movement"
@@ -3968,7 +4060,7 @@ msgstr "Fri"
 msgid "Friday"
 msgstr "שישי"
 
-msgid "From :"
+msgid "From:"
 msgstr ""
 
 #, python-format
@@ -4108,9 +4200,6 @@ msgstr ""
 msgid "Goto 0"
 msgstr "Goto 0"
 
-msgid "Goto :"
-msgstr ""
-
 msgid "Goto X"
 msgstr ""
 
@@ -4138,6 +4227,9 @@ msgstr ""
 msgid "Goto specific date/time"
 msgstr ""
 
+msgid "Goto:"
+msgstr ""
+
 msgid "GotoX calibration"
 msgstr ""
 
@@ -4154,9 +4246,6 @@ msgstr "יוונית"
 
 msgid "Greek"
 msgstr "יוונית"
-
-msgid "Greek (Modern)"
-msgstr ""
 
 msgid "Green"
 msgstr ""
@@ -4362,6 +4451,9 @@ msgstr ""
 msgid "Hotkey zap"
 msgstr ""
 
+msgid "Hotplug"
+msgstr ""
+
 #, fuzzy
 msgid "How many minutes do you want add to the recording?"
 msgstr "? כמה דקות אתה מעוניין להקליט"
@@ -4416,6 +4508,9 @@ msgid "Iceland"
 msgstr ""
 
 msgid "Icons"
+msgstr ""
+
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
 msgstr ""
 
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
@@ -4494,6 +4589,10 @@ msgid "Import channels and/or EPG from remote receiver URL when receiver is boot
 msgstr ""
 
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
+msgstr ""
+
+#, python-format
+msgid "Import from fallback tuner failed, %s"
 msgstr ""
 
 msgid "Import from remote receiver URL"
@@ -4633,9 +4732,6 @@ msgstr "next channel in history"
 
 msgid "Install extensions"
 msgstr ""
-
-msgid "Install extensions."
-msgstr ".התקן תוספות"
 
 msgid "Install local extension"
 msgstr "התקן תוספת מקומית"
@@ -4891,15 +4987,15 @@ msgstr "הגדרה קודמת"
 msgid "Last speed"
 msgstr "מהירות קודמת"
 
-msgid "Last upgrade: "
+msgid "Last update: "
 msgstr ""
 
 msgid "Latest Commits"
 msgstr ""
 
-#, fuzzy
-msgid "Latest upgrade log"
-msgstr "Select upgrade source to edit."
+#
+msgid "Latest update log"
+msgstr ""
 
 #
 msgid "Latitude"
@@ -5157,6 +5253,9 @@ msgstr ""
 #
 msgid "Manage extensions"
 msgstr "נהל תוספים"
+
+msgid "Manage extensions or plugins for your receiver."
+msgstr ""
 
 #
 msgid "Manage your receiver's software"
@@ -5865,9 +5964,6 @@ msgstr "נורווגית"
 msgid "Norwegian"
 msgstr "נורווגית"
 
-msgid "Not Defined"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Not Installed"
@@ -5877,6 +5973,9 @@ msgid "Not Required"
 msgstr ""
 
 msgid "Not associated"
+msgstr ""
+
+msgid "Not defined"
 msgstr ""
 
 #
@@ -5958,9 +6057,6 @@ msgstr "כבוי"
 msgid "Offline decode delay (ms)"
 msgstr ""
 
-msgid "Ok"
-msgstr ""
-
 msgid "Oman"
 msgstr ""
 
@@ -5980,6 +6076,9 @@ msgstr ""
 #
 msgid "One"
 msgstr "אחד"
+
+msgid "Online update of your receiver software."
+msgstr ""
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
@@ -6048,7 +6147,7 @@ msgstr ""
 msgid "Overscan wizard"
 msgstr ""
 
-msgid "Overwrite configuration files during software upgrade?"
+msgid "Overwrite configuration files during software update?"
 msgstr ""
 
 #, fuzzy
@@ -6216,6 +6315,9 @@ msgstr ""
 msgid "Pitcairn"
 msgstr ""
 
+msgid "Pixels\n"
+msgstr ""
+
 #
 msgid "Play"
 msgstr "נגן"
@@ -6223,6 +6325,14 @@ msgstr "נגן"
 #
 msgid "Play DVD"
 msgstr "Play DVD"
+
+#
+#, fuzzy
+msgid "Play DVDs"
+msgstr "Play DVD"
+
+msgid "Play as Picture in Picture"
+msgstr ""
 
 #
 #, fuzzy
@@ -6248,6 +6358,9 @@ msgstr "play from next mark or playlist entry"
 #, fuzzy
 msgid "Play from previous mark or playlist entry"
 msgstr "play from previous mark or playlist entry"
+
+msgid "Play in main window"
+msgstr ""
 
 #
 #, fuzzy
@@ -6759,9 +6872,6 @@ msgstr "Primary DNS"
 msgid "Prime time"
 msgstr ""
 
-msgid "PrimeTime"
-msgstr ""
-
 msgid "Priority"
 msgstr "עדיפות"
 
@@ -6830,6 +6940,9 @@ msgid "Providers"
 msgstr "Providers"
 
 msgid "Puerto Rico"
+msgstr ""
+
+msgid "Purge deleted user bouquets"
 msgstr ""
 
 msgid "Put TV in standby"
@@ -6912,10 +7025,10 @@ msgstr "?לבצע כיבוי עכשיו"
 msgid "Really store at index %2d for current position?"
 msgstr ""
 
-msgid "Really upgrade the frontprocessor and reboot now?"
+msgid "Really update the frontprocessor and reboot now?"
 msgstr ""
 
-msgid "Really upgrade your settop box and reboot now?"
+msgid "Really update your settop box and reboot now?"
 msgstr ""
 
 msgid "Reboot"
@@ -7053,13 +7166,25 @@ msgstr "הסר סמן"
 msgid "Remove a nameserver entry"
 msgstr "remove a nameserver entry"
 
+msgid "Remove all alternatives"
+msgstr "Remove all alternatives"
+
 msgid "Remove all logfiles"
 msgstr ""
+
+msgid "Remove all new found flags"
+msgstr "Remove all new found flags"
 
 #
 #, fuzzy
 msgid "Remove bookmark"
 msgstr "remove bookmark"
+
+msgid "Remove bouquet from parental protection"
+msgstr ""
+
+msgid "Remove cable services"
+msgstr ""
 
 msgid "Remove completed timers after (days)"
 msgstr ""
@@ -7067,11 +7192,30 @@ msgstr ""
 msgid "Remove currently selected title"
 msgstr "Remove currently selected title"
 
+msgid "Remove directory"
+msgstr "Remove directory"
+
+msgid "Remove entry"
+msgstr "Remove entry"
+
+msgid "Remove from parental protection"
+msgstr "Remove from parental protection"
+
 msgid "Remove items from trash can after (days)"
 msgstr ""
 
+#
+msgid "Remove new found flag"
+msgstr "Remove new found flag"
+
 msgid "Remove plugins"
 msgstr "הסר פלאגינים"
+
+msgid "Remove selected satellite"
+msgstr "Remove selected satellite"
+
+msgid "Remove terrestrial services"
+msgstr ""
 
 msgid "Remove this logfile"
 msgstr ""
@@ -7093,6 +7237,9 @@ msgstr "הסר כותרת"
 msgid "Rename"
 msgstr "שנה שם"
 
+msgid "Rename entry"
+msgstr ""
+
 msgid "Rename name and description for new events"
 msgstr ""
 
@@ -7101,6 +7248,9 @@ msgstr ""
 
 msgid "Repeat leave standby messages"
 msgstr ""
+
+msgid "Repeat playlist"
+msgstr "Repeat playlist"
 
 #, fuzzy
 msgid "Repeat type"
@@ -7209,8 +7359,18 @@ msgstr "שחזור"
 msgid "Restore backups"
 msgstr "שחזור גיבויים"
 
+msgid "Restore deleted user bouquets"
+msgstr ""
+
 msgid "Restore system settings"
 msgstr "שחזור הגדרות מערכת"
+
+#
+msgid "Restore your backups by date."
+msgstr "שיחזור גיבויים לפי תאריך"
+
+msgid "Restore your receiver settings."
+msgstr ""
 
 #, fuzzy
 msgid "Restoring..."
@@ -7457,9 +7617,15 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
+msgid "Save last directory on exit"
+msgstr "Save last directory on exit"
+
 #, fuzzy
 msgid "Save playlist"
 msgstr "save playlist"
+
+msgid "Save playlist on exit"
+msgstr "Save playlist on exit"
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -7525,6 +7691,10 @@ msgstr "Tune failed!"
 #, fuzzy
 msgid "Scan files..."
 msgstr "...סרוק קבצים"
+
+#
+msgid "Scan for local extensions and install them."
+msgstr "סרוק לתוספות מקומיות והתקן אותם"
 
 msgid "Scan options"
 msgstr ""
@@ -7813,11 +7983,6 @@ msgstr ""
 msgid "Select interface"
 msgstr "בחר ממשק"
 
-#
-#, fuzzy
-msgid "Select locale"
-msgstr "Select a movie"
-
 msgid "Select location"
 msgstr ""
 
@@ -7918,12 +8083,15 @@ msgstr ""
 msgid "Select the virtual keyboard shifted character set"
 msgstr ""
 
-#, fuzzy
-msgid "Select upgrade source"
-msgstr "Select upgrade source to edit."
+msgid "Select the virtual keyboard shifted character set for the next character only"
+msgstr ""
 
-msgid "Select upgrade source to edit."
-msgstr "Select upgrade source to edit."
+#
+msgid "Select update source"
+msgstr ""
+
+msgid "Select update source to edit"
+msgstr "Select update source to edit"
 
 #
 msgid "Select video input with up/down buttons"
@@ -7941,6 +8109,13 @@ msgstr "Select provider to add..."
 
 msgid "Select your Skin"
 msgstr ""
+
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+".בחר את התקן הגיבוי\n"
+":ההתקן הנוכחי "
 
 msgid "Select your country. If not available select 'all'."
 msgstr ""
@@ -8006,6 +8181,9 @@ msgstr ""
 msgid "Service ID"
 msgstr ""
 
+msgid "Service belongs to a parental protected bouquet"
+msgstr ""
+
 #
 msgid "Service has been added to the favourites."
 msgstr "Service has been added to the favourites."
@@ -8066,11 +8244,6 @@ msgstr ""
 msgid "Service scan"
 msgstr "סריקת שירותים"
 
-#
-#, fuzzy
-msgid "Service searching"
-msgstr "סורק שירות"
-
 #, fuzzy
 msgid "Service title mode"
 msgstr "Select video mode"
@@ -8101,6 +8274,12 @@ msgid "Set action when movie playback is finished."
 msgstr "הפעולה כאשר סרט מתחיל"
 
 msgid "Set all hotkey to default?"
+msgstr ""
+
+msgid "Set alternative fallback tuners for DVB-T/C or ATSC"
+msgstr ""
+
+msgid "Set as startup service"
 msgstr ""
 
 msgid "Set blocktimes by weekday"
@@ -8219,6 +8398,9 @@ msgstr "חדות"
 msgid "Shellscript"
 msgstr ""
 
+msgid "Shift"
+msgstr ""
+
 msgid "Short filenames"
 msgstr ""
 
@@ -8267,6 +8449,9 @@ msgstr ""
 #, fuzzy
 msgid "Show WLAN status"
 msgstr "הצג סטטוס רשת אלחוטית"
+
+msgid "Show alternatives"
+msgstr "הראה אלטרנטיבות"
 
 msgid "Show animation while busy"
 msgstr ""
@@ -8354,7 +8539,10 @@ msgstr "Show infobar on skip forward/backward"
 msgid "Show latest commits"
 msgstr ""
 
-msgid "Show latest upgrade log"
+msgid "Show latest update log"
+msgstr ""
+
+msgid "Show media player on main menu"
 msgstr ""
 
 msgid "Show menu or plugin numbers"
@@ -8391,7 +8579,7 @@ msgstr ""
 msgid "Show notification when import channels was successful"
 msgstr ""
 
-msgid "Show packages to be upgraded"
+msgid "Show packages to be updated"
 msgstr ""
 
 msgid "Show picons in channel selection list"
@@ -8458,6 +8646,13 @@ msgstr "...הצג את נגן הרדיו"
 #
 msgid "Show the tv player..."
 msgstr "Show the tv player..."
+
+msgid "Show transponder info"
+msgstr "Transponder הראה מידע על ה"
+
+#, fuzzy
+msgid "Show underline characters in filenames"
+msgstr "Limited character set for recording filenames"
 
 msgid "Show vertical timelines"
 msgstr ""
@@ -8648,6 +8843,9 @@ msgstr ""
 msgid "Social/Political/Economics"
 msgstr ""
 
+msgid "SocketMMI"
+msgstr ""
+
 msgid "SoftCam / CI"
 msgstr ""
 
@@ -8741,6 +8939,9 @@ msgstr ""
 #, fuzzy
 msgid "Sort time"
 msgstr "Sort Time"
+
+msgid "Sorting of playlists"
+msgstr ""
 
 #
 msgid "Sound"
@@ -8857,6 +9058,9 @@ msgstr " מאוורר %d מתח"
 
 msgid "Standby in "
 msgstr ""
+
+msgid "Start directory"
+msgstr "התחל תיקיה"
 
 #
 msgid "Start from the beginning"
@@ -9009,6 +9213,9 @@ msgstr "timeshift עצור"
 #, fuzzy
 msgid "Stop timeshift?"
 msgstr "? Timeshift עצור"
+
+msgid "Stop using as startup service"
+msgstr ""
 
 msgid "Stopped"
 msgstr ""
@@ -9165,6 +9372,10 @@ msgstr ""
 
 msgid "Switch to TV mode"
 msgstr ""
+
+#
+msgid "Switch to bookmarks"
+msgstr "העבר לסימניות"
 
 #, fuzzy
 msgid "Switch to filelist"
@@ -9522,8 +9733,8 @@ msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
-"For a normal users it is not relevant.\n"
-"Don't panic please when you see values being displayed that you think look suspicious!"
+"For normal users it is not relevant.\n"
+"Please don't panic if you see values displayed looking suspicious!"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -9595,7 +9806,7 @@ msgstr ""
 msgid "This option allows you to force the HLG modes for UHD"
 msgstr ""
 
-msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
+msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button. With the user defined hidden the blue button is not shown in the menus"
 msgstr ""
 
 msgid "This option allows you to power off the display."
@@ -9956,6 +10167,9 @@ msgstr ""
 msgid "Troubleshoot"
 msgstr ""
 
+msgid "True"
+msgstr ""
+
 msgid "Try to find used transponders in cable network.. please wait..."
 msgstr "Try to find used transponders in cable network.. please wait..."
 
@@ -10016,6 +10230,9 @@ msgstr "Tuner מצב ה"
 
 msgid "Tuner type"
 msgstr "Tuner סוג ה"
+
+msgid "Tuners & scanning"
+msgstr ""
 
 msgid "Tunisia"
 msgstr ""
@@ -10104,7 +10321,7 @@ msgid "Unable to create the required directories on the media (e.g. USB stick or
 msgstr ""
 
 msgid ""
-"Unattended upgrade in progress\n"
+"Unattended update in progress\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -10196,6 +10413,11 @@ msgstr ""
 msgid "Update and reboot (recommended)"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Update bookmarks"
+msgstr "סריקה אוטומטית"
+
 #, fuzzy
 msgid "Update channel list only"
 msgstr "next channel in history"
@@ -10220,12 +10442,12 @@ msgid "Updatefeed not available."
 msgstr "Updatefeed not available."
 
 #
-msgid "Updating software catalog"
-msgstr "מעדכן קטלוג תוכנה"
+msgid "Updating"
+msgstr "משדרג"
 
 #
-msgid "Upgrading"
-msgstr "משדרג"
+msgid "Updating software catalog"
+msgstr "מעדכן קטלוג תוכנה"
 
 msgid "Upper case"
 msgstr ""
@@ -10260,6 +10482,9 @@ msgid "Use MHW EPG information when it is available."
 msgstr ""
 
 msgid "Use Netmed EPG information when it is available."
+msgstr ""
+
+msgid "Use OpenTV EPG information when it is available."
 msgstr ""
 
 msgid "Use TV remote control"
@@ -10546,6 +10771,9 @@ msgstr ""
 msgid "View video CD..."
 msgstr "View Video CD..."
 
+msgid "View, install and remove available or installed packages."
+msgstr ".הצג, התקן או הסר חבילות זמינות או מותקנות "
+
 msgid "Virgin Islands (British)"
 msgstr ""
 
@@ -10721,7 +10949,7 @@ msgstr ""
 msgid "What type of service scan do you want?"
 msgstr ""
 
-msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
+msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -11148,7 +11376,7 @@ msgid "Your current collection will get lost!"
 msgstr "Your current collection will get lost!"
 
 msgid ""
-"Your frontprocessor will be upgraded\n"
+"Your frontprocessor will be updated\n"
 "Please wait until your receiver reboots\n"
 "This may take a few minutes"
 msgstr ""
@@ -11313,51 +11541,17 @@ msgstr ""
 msgid "a gui to assign services/providers/caids to common interface modules"
 msgstr ""
 
-msgid "abort alternatives edit"
-msgstr "abort alternatives edit"
-
-#
-msgid "abort bouquet edit"
-msgstr "abort bouquet edit"
-
-#
-msgid "abort favourites edit"
-msgstr "abort favourites edit"
-
 msgid "about to start"
 msgstr "about to start"
 
 msgid "activate network adapter configuration"
 msgstr "activate network adapter configuration"
 
+msgid "active"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
-
-msgid "add alternatives"
-msgstr "add alternatives"
-
-msgid "add bookmark"
-msgstr "add bookmark"
-
-msgid "add bouquet"
-msgstr "add bouquet"
-
-msgid "add bouquet to parental protection"
-msgstr ""
-
-msgid "add marker"
-msgstr "הוסף סמן"
-
-#
-msgid "add service to bouquet"
-msgstr "הוסף את הערוץ לתיקית הערוצים"
-
-#
-msgid "add service to favourites"
-msgstr "הוסף את הערוץ למועדפים"
-
-msgid "add to parental protection"
-msgstr "הוסף לבקרת הורים"
 
 msgid "adult movie/drama"
 msgstr ""
@@ -11519,12 +11713,6 @@ msgstr ""
 msgid "cooking"
 msgstr ""
 
-msgid "copy to bouquets"
-msgstr "העתק לתיקית ערוצים"
-
-msgid "create directory"
-msgstr "צור תיקיה"
-
 #
 msgid "daily"
 msgstr "יומי"
@@ -11551,9 +11739,6 @@ msgstr "הפסק"
 
 msgid "disable intro screen"
 msgstr ""
-
-msgid "disable move mode"
-msgstr "disable move mode"
 
 msgid "disabled"
 msgstr "disabled"
@@ -11582,9 +11767,6 @@ msgstr ""
 msgid "economics/social advisory"
 msgstr ""
 
-msgid "edit alternatives"
-msgstr "edit alternatives"
-
 msgid "education/science/factual topics (general)"
 msgstr ""
 
@@ -11597,37 +11779,14 @@ msgstr "ריק"
 msgid "enable"
 msgstr "אפשר"
 
-#
-msgid "enable bouquet edit"
-msgstr "enable bouquet edit"
-
-#
-msgid "enable favourite edit"
-msgstr "enable favourite edit"
-
 msgid "enable intro screen"
 msgstr ""
-
-#
-msgid "enable move mode"
-msgstr "enable move mode"
 
 msgid "enabled"
 msgstr "אופשר"
 
-msgid "end alternatives edit"
-msgstr "end alternatives edit"
-
-#
-msgid "end bouquet edit"
-msgstr "end bouquet edit"
-
 msgid "end cut here"
 msgstr "end cut here"
-
-#
-msgid "end favourites edit"
-msgstr "end favourites edit"
 
 msgid "entertainment (10-16 year old)"
 msgstr ""
@@ -11697,9 +11856,6 @@ msgid "filename"
 msgstr "filename"
 
 msgid "film/cinema"
-msgstr ""
-
-msgid "find currently played service"
 msgstr ""
 
 msgid "fine arts"
@@ -11856,6 +12012,9 @@ msgstr ""
 
 #
 msgid "list style single line"
+msgstr ""
+
+msgid "listens to hotplug events"
 msgstr ""
 
 msgid "literature"
@@ -12052,12 +12211,6 @@ msgstr ""
 msgid "performing arts"
 msgstr ""
 
-msgid "play as picture in picture"
-msgstr ""
-
-msgid "play in mainwindow"
-msgstr ""
-
 msgid "please press OK when ready"
 msgstr "please press OK when ready"
 
@@ -12068,9 +12221,6 @@ msgid "popular culture/traditional arts"
 msgstr ""
 
 msgid "pre-school children's program"
-msgstr ""
-
-msgid "purge deleted userbouquets"
 msgstr ""
 
 msgid "receiver software because updates are available."
@@ -12095,62 +12245,18 @@ msgstr ""
 msgid "remove after this position"
 msgstr "remove after this position"
 
-msgid "remove all alternatives"
-msgstr "remove all alternatives"
-
-msgid "remove all new found flags"
-msgstr "remove all new found flags"
-
 #
 msgid "remove before this position"
 msgstr "remove before this position"
 
-#
-msgid "remove bookmark"
-msgstr "remove bookmark"
-
-msgid "remove bouquet from parental protection"
-msgstr ""
-
-msgid "remove cable services"
-msgstr ""
-
-msgid "remove directory"
-msgstr "remove directory"
-
-msgid "remove entry"
-msgstr "remove entry"
-
-msgid "remove from parental protection"
-msgstr "remove from parental protection"
-
-#
-msgid "remove new found flag"
-msgstr "remove new found flag"
-
-msgid "remove selected satellite"
-msgstr "remove selected satellite"
-
-msgid "remove terrestrial services"
-msgstr ""
-
 msgid "remove this mark"
 msgstr "remove this mark"
-
-msgid "rename entry"
-msgstr ""
-
-msgid "repeat playlist"
-msgstr "repeat playlist"
 
 #
 msgid "repeated"
 msgstr "repeated"
 
 msgid "reserved for future use"
-msgstr ""
-
-msgid "restore deleted userbouquets"
 msgstr ""
 
 msgid "reverse by date"
@@ -12177,12 +12283,6 @@ msgstr ""
 msgid "running"
 msgstr ""
 
-msgid "save last directory on exit"
-msgstr "save last directory on exit"
-
-msgid "save playlist on exit"
-msgstr "save playlist on exit"
-
 #
 msgid "scan state"
 msgstr "מצב סריקה"
@@ -12192,9 +12292,6 @@ msgstr ""
 
 msgid "seconds"
 msgstr "שניות"
-
-msgid "select"
-msgstr "בחר"
 
 #
 msgid "select CAId's"
@@ -12210,16 +12307,10 @@ msgstr ""
 msgid "serious/classical/religious/historical movie/drama"
 msgstr ""
 
-msgid "service is in bouquet parental protection"
-msgstr ""
-
 #
 #, fuzzy
 msgid "service off-air"
 msgstr "הוסף את הערוץ למועדפים"
-
-msgid "set as startup service"
-msgstr ""
 
 #
 msgid "show DVD main menu"
@@ -12228,23 +12319,14 @@ msgstr "show DVD main menu"
 msgid "show all tags"
 msgstr ""
 
-msgid "show alternatives"
-msgstr "הראה אלטרנטיבות"
-
 msgid "show event details"
 msgstr "הצג מידע על האירוע"
-
-msgid "show mediaplayer on mainmenu"
-msgstr ""
 
 msgid "show softwaremanager in setup menu"
 msgstr ""
 
 msgid "show softwaremanager on blue button"
 msgstr ""
-
-msgid "show transponder info"
-msgstr "transponder  הראה מידע על ה"
 
 msgid "show/game show (general)"
 msgstr ""
@@ -12313,9 +12395,6 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "sorting of playlists"
-msgstr ""
-
 msgid "special events"
 msgstr ""
 
@@ -12334,9 +12413,6 @@ msgstr "סטנדרטי"
 msgid "start cut here"
 msgstr "התחל גזירה כאן"
 
-msgid "start directory"
-msgstr "התחל תיקיה"
-
 msgid "starts in a few seconds"
 msgstr ""
 
@@ -12346,18 +12422,8 @@ msgstr ""
 msgid "stereo"
 msgstr "סטריאו"
 
-msgid "stop using as startup service"
-msgstr ""
-
 msgid "successful"
 msgstr ""
-
-#
-msgid "switch to bookmarks"
-msgstr "העבר לסימניות"
-
-msgid "switch to filelist"
-msgstr "העבר לרשימת הקבצים"
 
 msgid "switch to the next angle"
 msgstr "העבר לזווית הבאה"
@@ -12440,12 +12506,12 @@ msgid "until standby/restart"
 msgstr "until standby/restart"
 
 #
-#, fuzzy
-msgid "update bookmarks"
-msgstr "סריקה אוטומטית"
+msgid "user defined"
+msgstr "user defined"
 
 #
-msgid "user defined"
+#, fuzzy
+msgid "user defined hidden"
 msgstr "user defined"
 
 msgid "variety show"
@@ -12530,6 +12596,9 @@ msgstr "כן"
 
 msgid "yes (keep feeds)"
 msgstr "כן (שמור פידים)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 msgid "zap"
 msgstr "זיפזופ"

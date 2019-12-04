@@ -226,7 +226,9 @@ def parseColor(s):
 	return gRGB(int(s[1:], 0x10))
 
 def parseParameter(s):
-	"""This function is responsible for parsing parameters in the skin, it can parse integers, floats, hex colors, hex integers and named colors."""
+	"""This function is responsible for parsing parameters in the skin, it can parse integers, floats, hex colors, hex integers, named colors and string."""
+	if s[0] == '*':
+		return s[1:]
 	if s[0] == '#':
 		return int(s[1:], 16)
 	elif s[:2] == '0x':
@@ -499,6 +501,7 @@ def loadSingleSkinData(desktop, skin, path_prefix):
 					parameters["FileListMultiLock"] = (2,0,36,36)
 					parameters["ChoicelistDash"] = (0,3,1000,30)
 					parameters["ChoicelistName"] = (68,3,1000,30)
+					parameters["ChoicelistNameSingle"] = (7,3,1000,30)
 					parameters["ChoicelistIcon"] = (7,0,52,38)
 					parameters["PluginBrowserName"] = (180,8,38)
 					parameters["PluginBrowserDescr"] = (180,42,25)
@@ -506,10 +509,9 @@ def loadSingleSkinData(desktop, skin, path_prefix):
 					parameters["PluginBrowserDownloadName"] = (120,8,38)
 					parameters["PluginBrowserDownloadDescr"] = (120,42,25)
 					parameters["PluginBrowserDownloadIcon"] = (15,0,90,76)
-					parameters["ServiceInfo"] = (0,0,450,50)
 					parameters["ServiceInfoLeft"] = (0,0,450,45)
 					parameters["ServiceInfoRight"] = (450,0,1000,45)
-					parameters["SelectionListDescr"] = (45,3,1000,32)
+					parameters["SelectionListDescr"] = (45,6,1000,45)
 					parameters["SelectionListLock"] = (0,2,36,36)
 					parameters["ConfigListSeperator"] = 500
 					parameters["VirtualKeyboard"] = (68,68)
@@ -539,6 +541,13 @@ def loadSingleSkinData(desktop, skin, path_prefix):
 					parameters["PlayListName"] = (38,2,1000,34)
 					parameters["PlayListIcon"] = (7,7,24,24)
 					parameters["SHOUTcastListItem"] = (30,27,35,96,35,33,60,32)
+					parameters["AutotimerListIcon"] = (3,-1,36,36)
+					parameters["AutotimerListRectypeicon"] = (39,4,30,30)
+					parameters["AutotimerListTimerName"] = (76,4,26,32)
+					parameters["AutotimerListTimespan"] = (2,40,5,25)
+					parameters["AutotimerListChannels"] = (2,60,4,32)
+					parameters["AutotimerListHasTimespan"] = (154,4,150,25)
+					parameters["AutotimerListDays"] = (1,40,5,25)
 
 	for skininclude in skin.findall("include"):
 		filename = skininclude.attrib.get("filename")
