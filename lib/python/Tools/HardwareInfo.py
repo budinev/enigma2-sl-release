@@ -58,10 +58,7 @@ class HardwareInfo:
 
 		# standard values
 		self.device_model = self.device_model or self.device_name
-<<<<<<< HEAD
-=======
 		self.device_hw = self.device_model
->>>>>>> release-8.0
 		self.machine_name = self.device_model
 
 		# custom overrides for specific receivers
@@ -69,20 +66,9 @@ class HardwareInfo:
 			self.machine_name = "%sx00" % self.device_model[:3]
 		elif self.device_model == "et11000":
 			self.machine_name = "et1x000"
-<<<<<<< HEAD
-		elif self.device_model.startswith("H9 "):
-			self.device_name = self.device_model
-			self.device_model = self.device_name.replace(" ", "").lower()
-			self.machine_name = "h9combo"
-		elif self.device_model.startswith("H9"):
-			self.device_name = self.device_model
-			self.device_model = self.device_name.lower()
-			self.machine_name = "h9"
-=======
 		elif self.device_brandname == "Zgemma":
 			self.device_model = self.device_name
 			self.machine_name = self.device_name
->>>>>>> release-8.0
 
 		if self.device_revision:
 			self.device_string = "%s (%s-%s)" % (self.device_hw, self.device_revision, self.device_version)
