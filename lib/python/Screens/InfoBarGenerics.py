@@ -281,7 +281,6 @@ class InfoBarShowHide(InfoBarScreenSaver):
 		self.onExecBegin.append(self.__onExecBegin)
 
 	def __onExecBegin(self):
-		self.clearScreenPath()
 		self.showHideVBI()
 
 	def __layoutFinished(self):
@@ -697,6 +696,7 @@ class InfoBarChannelSelection:
 			self.servicelist.zap()
 
 	def firstRun(self):
+		self.servicelist.setMode()
 		self.onShown.remove(self.firstRun)
 		config.misc.initialchannelselection.value = False
 		config.misc.initialchannelselection.save()
@@ -872,6 +872,10 @@ class InfoBarChannelSelection:
 
 	def openFavouritesList(self):
 		self.servicelist.showFavourites()
+		self.openServiceList()
+
+	def openSatellitesList(self):
+		self.servicelist.showSatellites()
 		self.openServiceList()
 
 	def openServiceList(self):
@@ -2243,7 +2247,9 @@ class InfoBarJobman:
 		return [((boundFunction(self.getJobName, job), boundFunction(self.showJobView, job), lambda: True), None) for job in job_manager.getPendingJobs()]
 
 	def getJobName(self, job):
-		return "%s: %s (%d%%)" % (job.getStatustext(), job.name, int(100*job.progress/float(job.end)))
+		if job.status == job.IN_PROGRESS:
+			return "%s: (%d%%), %s" % (job.getStatustext(), int(100*job.progress/float(job.end)), job.name)
+		return "%s: %s" % (job.getStatustext(), job.name)
 
 	def showJobView(self, job):
 		from Screens.TaskView import JobView
@@ -2966,7 +2972,7 @@ class InfoBarNotifications:
 					reload_whitelist_vbi()
 				if "epg" in config.usage.remote_fallback_import.value:
 					eEPGCache.getInstance().load()
-				if not(n[4].endswith("NOK") and config.usage.remote_fallback_nok.value or config.usage.remote_fallback_ok.value):
+				if config.misc.initialchannelselection.value or not(config.usage.remote_fallback_import.value and (n[4].endswith("NOK") and config.usage.remote_fallback_nok.value or config.usage.remote_fallback_ok.value)):
 					return
 			if cb:
 				dlg = self.session.openWithCallback(cb, n[1], *n[2], **n[3])

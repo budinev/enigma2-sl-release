@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-25 13:29+0200\n"
+"POT-Creation-Date: 2020-12-01 09:56+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 344784320@qq.com\n"
 "Language-Team: Openpli Team\n"
@@ -202,6 +202,11 @@ msgstr[0] "发现 %d 个频道"
 msgid "%d core"
 msgid_plural "%d cores"
 msgstr[0] "%d 个核心"
+
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
 
 #, python-format
 msgid "%d file"
@@ -545,25 +550,6 @@ msgstr ""
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - 默认 (不可用)"
 
-#, fuzzy
-msgid "< Current >"
-msgstr "<当前>"
-
-#, fuzzy
-msgid "< Default + Picon >"
-msgstr "<默认 + Picon>"
-
-#, fuzzy
-msgid "< Default >"
-msgstr "缺省值"
-
-msgid "< Emergency >"
-msgstr ""
-
-#, fuzzy
-msgid "< Pending restart >"
-msgstr "待机 / 重启"
-
 msgid "<Current movielist location>"
 msgstr "<当前影片列表位置>"
 
@@ -836,6 +822,10 @@ msgstr "添加到家长控制"
 msgid "Add/remove change timer for current event"
 msgstr "为当前事件增加/移除/更改定时器"
 
+#, fuzzy
+msgid "Additional cable of motorized LNB"
+msgstr "极轴座第二个接头"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr "额外的马达选项允许你输入马达规格表中的详细信息，这样Enigma就可以计算出将碟形天线从一颗卫星移动到另一颗卫星需要多长时间。"
 
@@ -952,6 +942,10 @@ msgstr "允许为听障者提供辅助字幕"
 
 msgid "Allow unsupported modes"
 msgstr "允许不支持的模式"
+
+#, fuzzy
+msgid "Allows the TV remote to be used to control the receiver."
+msgstr "用电视遥控"
 
 msgid "Alpha"
 msgstr "阿尔法"
@@ -1245,6 +1239,10 @@ msgstr "自动语言选择"
 msgid "Auto play blu-ray file"
 msgstr "自动播放蓝光文件"
 
+#, fuzzy
+msgid "Auto play last service in radio mode"
+msgstr "现在进行快速服务扫描"
+
 msgid "Auto scart switching"
 msgstr "自动切换录像机"
 
@@ -1265,6 +1263,9 @@ msgstr "自动书签"
 
 msgid "Automatic scan"
 msgstr "自动扫描"
+
+msgid "Automatically put the TV in standby whenever the receiver goes into standby or deep standby."
+msgstr ""
 
 msgid "Automatically start timeshift after"
 msgstr "自动开始时光平移"
@@ -1359,6 +1360,9 @@ msgstr "基本PID信息"
 
 msgid "Basque"
 msgstr "巴斯克"
+
+msgid "Before sending the command to switch the TV to standby, the receiver tests if all the other devices plugged to TV are in standby. If they are not, the 'sourceinactive' command will be sent to the TV instead of the 'standby' command."
+msgstr ""
 
 msgid "Begin time"
 msgstr "开始时间"
@@ -1878,6 +1882,9 @@ msgstr "执行命令..."
 msgid "Command order"
 msgstr "命令顺序"
 
+msgid "Command the TV to switch to the correct HDMI input when zap timers activate."
+msgstr ""
+
 msgid "Commit info"
 msgstr "提交信息"
 
@@ -2386,6 +2393,10 @@ msgstr ""
 msgid "Curacao"
 msgstr ""
 
+#, fuzzy
+msgid "Current"
+msgstr "<当前>"
+
 msgid "Current CEC address"
 msgstr "当前CEC地址"
 
@@ -2571,6 +2582,10 @@ msgstr "默认设置"
 msgid "Default timer type"
 msgstr "默认新建计时器类型"
 
+#, fuzzy
+msgid "Default+Picon"
+msgstr "<默认 + Picon>"
+
 msgid "Define the location of the EPG Cache file."
 msgstr "定义EPG缓存文件的位置。"
 
@@ -2619,6 +2634,9 @@ msgstr "按键重按延迟时间："
 msgid "Delay before sequence repeat"
 msgstr "重复序列前延迟"
 
+msgid "Delay between CEC commands when sending a series of commands. Some devices require this delay for correct functioning, usually between 50-150ms."
+msgstr ""
+
 msgid "Delay between diseqc commands"
 msgstr "DISEQC命令间的延迟时间"
 
@@ -2643,6 +2661,10 @@ msgstr "删除"
 msgid "Delete Image"
 msgstr "删除固件"
 
+#, fuzzy
+msgid "Delete all the text"
+msgstr "删除所有文本"
+
 msgid "Delete entry"
 msgstr "删除项目"
 
@@ -2660,10 +2682,6 @@ msgstr "删除播放列表项目"
 
 msgid "Delete saved playlist"
 msgstr "删除已保存的播放列表"
-
-#, fuzzy
-msgid "Delete the all the text"
-msgstr "删除所有文本"
 
 msgid "Delete the character to the left of text cursor"
 msgstr "删除文本缓冲区光标左侧的字符"
@@ -3137,6 +3155,9 @@ msgstr "电子节目指南"
 msgid "Embedded"
 msgstr "嵌入"
 
+msgid "Emergency"
+msgstr ""
+
 msgid "Empty slot"
 msgstr ""
 
@@ -3182,11 +3203,12 @@ msgstr "启用未开发 EPG"
 msgid "Enable auto cable scan"
 msgstr "启用自动扫描"
 
-msgid "Enable auto fast scan"
+#, fuzzy
+msgid "Enable auto fastscan"
 msgstr "启用快速扫描"
 
-#, python-format
-msgid "Enable auto fast scan for %s"
+#, fuzzy, python-format
+msgid "Enable auto fastscan for %s"
 msgstr "为 %s 启用快速自动扫描"
 
 msgid "Enable bouquet edit"
@@ -3212,6 +3234,10 @@ msgstr "允许移动模式"
 
 msgid "Enable multiple bouquets"
 msgstr "启用多自定义列表"
+
+#, fuzzy
+msgid "Enable or disable using HDMI-CEC."
+msgstr "启用HDMI-CEC"
 
 msgid "Enable parental protection"
 msgstr "启用家长保护"
@@ -3707,14 +3733,19 @@ msgstr "快速"
 msgid "Fast DiSEqC"
 msgstr "快速DiSEqC"
 
-msgid "Fast Scan"
-msgstr "快速扫描"
-
 msgid "Fast epoch"
 msgstr "快速时期"
 
 msgid "Fast forward speeds"
 msgstr "快进速度"
+
+#, fuzzy
+msgid "FastScan"
+msgstr "快速扫描"
+
+#, fuzzy
+msgid "Fastscan"
+msgstr "快速扫描"
 
 msgid "Favourites"
 msgstr "收藏夹"
@@ -3967,6 +3998,10 @@ msgstr "转到 0"
 msgid "Goto X"
 msgstr "转到 X"
 
+#, fuzzy
+msgid "Goto down service"
+msgstr "转到最近频道（最后观看的）"
+
 msgid "Goto index position"
 msgstr "转到索引位置"
 
@@ -3990,6 +4025,10 @@ msgstr "跳转到黄金时段/现在"
 
 msgid "Goto specific date/time"
 msgstr "跳转到具体的日期/时间"
+
+#, fuzzy
+msgid "Goto up service"
+msgstr "转到最近频道（最后观看的）"
 
 msgid "Goto:"
 msgstr "转到:"
@@ -4264,6 +4303,9 @@ msgstr "图标"
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
 msgstr "如果禁用，则不显示文件名和目录名中的下划线字符，并用空格替换。"
 
+msgid "If enabled, a log will be kept of CEC protocol traffic ('hdmicec.log')"
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr "如果启用，则在移动或复制录制时，书签将随新位置更新。"
 
@@ -4281,6 +4323,9 @@ msgstr "如果设置为“是”，则音频文件仅在“列表模式”下播
 
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
 msgstr "如果设置为“是”，信号值（信噪比等）将从API V3计算。这是一个旧的api版本，现已被取代。"
+
+msgid "If set to 'yes' the same commands will be sent to the TV for deep standby events, as are sent during regular standby events."
+msgstr ""
 
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr "如果使用多个未提交的开关，则必须多次发送diseqc命令。设置为链中未提交的开关数减去1。"
@@ -4319,6 +4364,10 @@ msgstr "忽略网络DVB-T命名空间"
 
 msgid "Ignore conflict"
 msgstr "忽略冲突"
+
+#, fuzzy
+msgid "Image View On"
+msgstr "固件: "
 
 #, python-format
 msgid ""
@@ -5438,9 +5487,6 @@ msgstr "未找到网络"
 msgid "No new plugins found"
 msgstr "没有发现新插件"
 
-msgid "No positioner capable frontend found."
-msgstr "未发现有支持的极轴天线。"
-
 msgid "No priority"
 msgstr "没有优先级"
 
@@ -5473,9 +5519,6 @@ msgstr "完全不"
 
 msgid "No transparency"
 msgstr "DVB字幕黑色透明"
-
-msgid "No tuner is configured for use with a diseqc positioner!"
-msgstr "没有配置极轴(DiSEqC 1.2)。"
 
 msgid ""
 "No tuner is enabled!\n"
@@ -5758,6 +5801,9 @@ msgstr ""
 msgid "PGS file"
 msgstr ""
 
+msgid "PID Filtering"
+msgstr ""
+
 msgid "PIN code needed"
 msgstr "需要PIN码"
 
@@ -5839,6 +5885,10 @@ msgstr "暂停回放"
 
 msgid "Pause/Continue playback"
 msgstr "暂停/继续 回放"
+
+#, fuzzy
+msgid "Pending restart"
+msgstr "待机 / 重启"
 
 msgid "Percentage left"
 msgstr "左百分比"
@@ -6321,7 +6371,7 @@ msgid "Press OK on your remote control to continue."
 msgstr "按OK键确认。"
 
 #, fuzzy, python-format
-msgid "Press OK to activate the selected%s skin."
+msgid "Press OK to activate the selected %s skin."
 msgstr "按OK键激活所选皮肤: %s。"
 
 msgid "Press OK to activate the settings."
@@ -6335,7 +6385,7 @@ msgid "Press OK to get further details for %s"
 msgstr "按OK键获取 %s 详细说明"
 
 #, fuzzy, python-format
-msgid "Press OK to keep the currently selected%s skin."
+msgid "Press OK to keep the currently selected %s skin."
 msgstr "按OK键保持目前所选皮肤: %s。"
 
 msgid "Press OK to scan"
@@ -6352,6 +6402,10 @@ msgstr "按OK键选择一个服务。"
 
 msgid "Press OK to select satellites"
 msgstr "按OK键选择一颗卫星。"
+
+#, fuzzy
+msgid "Press OK to select the save location of the log file."
+msgstr "选择日志文件的目录"
 
 msgid "Press OK to select/deselect a CAId."
 msgstr "按OK键 选择/取消 CAID"
@@ -6464,6 +6518,10 @@ msgstr "波多黎各"
 
 msgid "Purge deleted user bouquets"
 msgstr "清除已删除的自定义频道组"
+
+#, fuzzy
+msgid "Put A/V receiver to standby too."
+msgstr "设置机顶盒待机"
 
 msgid "Put TV in standby"
 msgstr "待机"
@@ -6629,9 +6687,6 @@ msgstr "地区"
 
 msgid "Relative"
 msgstr "相对"
-
-msgid "Relevant PIDs routing"
-msgstr ""
 
 msgid "Reload"
 msgstr "重新加载"
@@ -7332,10 +7387,6 @@ msgstr "选择一部电影"
 msgid "Select a network adapter"
 msgstr "选择网卡"
 
-#, fuzzy
-msgid "Select a skin"
-msgstr "选择动作"
-
 msgid "Select a tuner"
 msgstr "选择调谐器"
 
@@ -7920,9 +7971,6 @@ msgstr "在主菜单中显示媒体播放器"
 msgid "Show menu or plugin numbers"
 msgstr "显示菜单或插件编号"
 
-msgid "Show menu paths"
-msgstr "显示菜单路径"
-
 msgid "Show message when recording starts"
 msgstr "录制开始时显示信息"
 
@@ -7968,6 +8016,14 @@ msgstr "显示记录时钟图标"
 msgid "Show record indicator"
 msgstr "显示记录指示器"
 
+#, fuzzy
+msgid "Show satellites list"
+msgstr "显示频道列表"
+
+#, fuzzy
+msgid "Show screen path"
+msgstr "显示菜单路径"
+
 msgid "Show screensaver"
 msgstr "显示屏保"
 
@@ -8010,11 +8066,17 @@ msgstr "显示符号"
 msgid "Show the radio player..."
 msgstr "广播回放模式下。。。"
 
+msgid "Show the service information on two lines in the channel selection screen. You can choose between the current event description below the channel name, or the current event description next to the channel name, and the next event description on the second line."
+msgstr ""
+
 msgid "Show the tv player..."
 msgstr "电视回放模式下。。。"
 
 msgid "Show transponder info"
 msgstr "显示转发器信息"
+
+msgid "Show two lines per entry"
+msgstr ""
 
 msgid "Show underline characters in filenames"
 msgstr "在文件名中显示下划线字符"
@@ -8090,6 +8152,10 @@ msgstr "单个"
 
 msgid "Single EPG"
 msgstr "单个-EPG"
+
+#, fuzzy
+msgid "Single line mode"
+msgstr "设置视频模式"
 
 msgid "Single satellite"
 msgstr "单颗卫星"
@@ -8211,6 +8277,9 @@ msgid "Solomon Islands"
 msgstr ""
 
 msgid "Somalia"
+msgstr ""
+
+msgid "Some TVs do not wake from standby when they receive the 'Image View On' command. If this is the case try the 'Text View On' command instead."
 msgstr ""
 
 msgid "Some plugins are not available:\n"
@@ -8613,6 +8682,11 @@ msgstr "周日"
 msgid "Sunday"
 msgstr "星期日"
 
+msgid ""
+"Sundtek - hardware blind scan in progress.\n"
+"Please wait(3-20 min) for the scan to finish."
+msgstr ""
+
 msgid "Suriname"
 msgstr ""
 
@@ -8812,6 +8886,9 @@ msgstr "屏幕测试"
 msgid "Testscreens that are helpfull to fine-tune your display"
 msgstr "屏幕测试用来调整显示器"
 
+msgid "Text View On"
+msgstr ""
+
 msgid "Text color"
 msgstr "文本颜色"
 
@@ -8850,6 +8927,9 @@ msgstr "已成功保存PIN码。"
 
 msgid "The PIN codes you entered are different."
 msgstr "密码输入不相同。"
+
+msgid "The command to wake from standby will be sent multiple times."
+msgstr ""
 
 #, python-format
 msgid ""
@@ -9108,8 +9188,9 @@ msgstr "此选项允许您在显示器上显示所有符号。"
 msgid "This option allows you to show menu and/or plugin number quick links."
 msgstr "此选项允许您显示菜单和/或插件号快速链接。"
 
-msgid "This option allows you to show menu paths."
-msgstr "此选项用以显示菜单路径。"
+#, fuzzy
+msgid "This option allows you to show the full screen path leading to the current screen."
+msgstr "此选项允许您增强图片中的绿色色调。"
 
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "此选项允许您并排查看新旧设置。"
@@ -9538,6 +9619,14 @@ msgstr ""
 msgid "Two"
 msgstr "2"
 
+#, fuzzy
+msgid "Two lines"
+msgstr "显示信息行"
+
+#, fuzzy
+msgid "Two lines and next event"
+msgstr "转到下一频道"
+
 msgid "Type"
 msgstr "类型"
 
@@ -9704,6 +9793,10 @@ msgstr "更新软件目录"
 
 msgid "Upper case"
 msgstr ""
+
+#, fuzzy
+msgid "Uptime"
+msgstr "睡眠定时器"
 
 msgid "Uruguay"
 msgstr ""
@@ -10015,6 +10108,9 @@ msgstr "音量"
 msgid "Volume down"
 msgstr "音量减"
 
+msgid "Volume keys on the receiver remote will control the TV volume."
+msgstr ""
+
 msgid "Volume up"
 msgstr "音量加"
 
@@ -10051,11 +10147,22 @@ msgstr "等待分区"
 msgid "Wake On LAN"
 msgstr "唤醒网络"
 
+msgid "Wake the receiver from standby when selected wake command is sent from the TV."
+msgstr ""
+
 msgid "Wakeup"
 msgstr "唤醒"
 
+#, fuzzy
+msgid "Wakeup A/V receiver from standby too."
+msgstr "从待机状态唤醒电视"
+
 msgid "Wakeup TV from standby"
 msgstr "唤醒电视"
+
+#, fuzzy
+msgid "Wakeup command for TV"
+msgstr "来自电视的唤醒信号"
 
 msgid "Wakeup receiver for start timer"
 msgstr "为启动定时器唤醒接收机"
@@ -10172,6 +10279,14 @@ msgstr "一旦启用，OK键周围的箭头键将使用 'neutrino'作为切换�
 msgid "When enabled the left, right, CH+/-, B+/-, P+/- buttons will follow the 'neutrino' style zap controls instead of the enigma2 style."
 msgstr "一旦启用，左右键以及 CH+/-, B+/-, P+/- 键将使用 'neutrino'切换类型而不是enigma2类型。"
 
+#, fuzzy
+msgid "When enabled the receiver will automatically return to standby when the TV is turned off."
+msgstr "一旦启用，接收机将会自动使用你之前所选择的音轨。"
+
+#, fuzzy
+msgid "When enabled the receiver will automatically wake from standby when the TV is turned on."
+msgstr "一旦启用，接收机将会自动使用你之前所选择的音轨。"
+
 msgid "When enabled the set top box is able to wakeup on LAN"
 msgstr "一旦启用，机顶盒将可以通过LAN唤醒。"
 
@@ -10277,6 +10392,10 @@ msgstr "一旦启用，http媒体流在服务端解扰。远程客户端不需�
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "一旦启用，有可能可以使用exit键退出电影播放器。"
 
+#, fuzzy
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "一旦启用，接收机将会自动使用你之前所选择的音轨。"
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "一旦启用，马达停止转动时，电量功耗检测将由调谐器支持。"
 
@@ -10358,6 +10477,9 @@ msgstr "非零时，录制将早于EPG注明的时间开始。"
 msgid "When nonzero, a recording will stop later than the ending time indicated by the EPG."
 msgstr "非零时，录制将会晚于EPG注明的时间结束。"
 
+msgid "When receiver wakes from standby, it will command the TV to switch to the HDMI input the receiver is connected to."
+msgstr ""
+
 msgid "When selected this allows video modes to be selected even if they are not reported as supported."
 msgstr "选择此选项后，即使未报告支持视频模式，也可以选择视频模式。"
 
@@ -10366,6 +10488,9 @@ msgstr "当内容为16：9横纵比时，选择是否拉伸画面。"
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "当内容为4：3横纵比时，选择是否拉伸画面。"
+
+msgid "When the receiver wakes from standby or deep standby, it will send a command to the TV to bring it out of standby too."
+msgstr ""
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "在哪里保存时光平移临时录制的内容?"
@@ -10788,6 +10913,9 @@ msgstr "活动的"
 
 msgid "actual time only"
 msgstr "仅仅实际时间"
+
+msgid "additional cable of rotor"
+msgstr ""
 
 msgid "adult movie/drama"
 msgstr "成人电影／戏剧"
@@ -11470,6 +11598,10 @@ msgstr "摇滚/流行"
 
 msgid "romance"
 msgstr "浪漫"
+
+#, fuzzy
+msgid "rotor"
+msgstr "马达: "
 
 msgid "running"
 msgstr "运行中"

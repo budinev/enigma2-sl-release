@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-25 13:29+0200\n"
-"PO-Revision-Date: 2020-05-10 20:14+0200\n"
+"POT-Creation-Date: 2020-12-03 13:26+0100\n"
+"PO-Revision-Date: 2020-11-30 18:56+0100\n"
 "Last-Translator: Oriol Pellicer <oriol@elsud.org>\n"
 "Language-Team: angelodos angelo2807@hotmail.com\n"
 "Language: ca\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: iso-8859-1\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 
 #
 msgid ""
@@ -219,6 +219,12 @@ msgstr[0] "%d core"
 msgstr[1] "%d cores"
 
 #, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dia"
+msgstr[1] "%d dies"
+
+#, python-format
 msgid "%d file"
 msgid_plural "%d files"
 msgstr[0] "%d file"
@@ -253,7 +259,7 @@ msgstr "%d kB/s"
 msgid "%d min"
 msgstr "%d min"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "% d minut"
@@ -609,28 +615,6 @@ msgstr "9"
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - predeterminat (desactivat)"
 
-#, fuzzy
-msgid "< Current >"
-msgstr "<Actual>"
-
-#
-#, fuzzy
-msgid "< Default + Picon >"
-msgstr "<Predeterminat + picó>"
-
-#
-#, fuzzy
-msgid "< Default >"
-msgstr "Per defecte"
-
-#, fuzzy
-msgid "< Emergency >"
-msgstr "< Emergencia >"
-
-#, fuzzy
-msgid "< Pending restart >"
-msgstr "<Pendent de reiniciar>"
-
 #
 msgid "<Current movielist location>"
 msgstr "<Ubicació pel-liculas actual>"
@@ -954,6 +938,9 @@ msgstr "Afegir a la protecció parental"
 msgid "Add/remove change timer for current event"
 msgstr "Afegiu / traieu el temporitzador de canvis per a l’esdeveniment actual"
 
+msgid "Additional cable of motorized LNB"
+msgstr "Cable addicional de LNB motoritzat"
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr "Les opcions addicionals del motor us permeten introduir detalls de la fitxa d’especificacions del motor de manera que l’enigma es pugui determinar quant trigarà a moure el plat d’un satèl·lit a un altre satèl·lit."
 
@@ -1077,6 +1064,9 @@ msgstr "Permet subtítols per a deficients auditius"
 msgid "Allow unsupported modes"
 msgstr "Permetre modes no compatibles"
 
+msgid "Allows the TV remote to be used to control the receiver."
+msgstr "Permet utilitzar el comandament a distància del televisor per controlar el receptor."
+
 #
 msgid "Alpha"
 msgstr "Alpha"
@@ -1173,9 +1163,8 @@ msgstr "Qualsevol activitat"
 msgid "Arabic"
 msgstr "Àrab"
 
-#, fuzzy
 msgid "Are you sure to delete image:"
-msgstr "Segur que heu de reiniciar ?"
+msgstr "Segur que heu de reiniciar:"
 
 msgid "Are you sure to purge all deleted user bouquets?"
 msgstr "Esteu segur de purgar tots els rams d’usuari suprimits?"
@@ -1196,9 +1185,8 @@ msgstr "Esteu segur de suprimir tots els serveis terrestres?"
 msgid "Are you sure to remove this entry?"
 msgstr "Segur que suprimiu aquesta entrada?"
 
-#, fuzzy
 msgid "Are you sure to restore all deleted images"
-msgstr "Esteu segur de suprimir tots els serveis per cable?"
+msgstr "Esteu segur de suprimir tots els serveis per cable"
 
 #
 msgid ""
@@ -1394,7 +1382,11 @@ msgid "Auto language selection"
 msgstr "Selecció d’idioma automàtica"
 
 msgid "Auto play blu-ray file"
-msgstr ""
+msgstr "Auto "
+
+#
+msgid "Auto play last service in radio mode"
+msgstr "Reproducció automàtica del darrer servei en mode de ràdio"
 
 #
 msgid "Auto scart switching"
@@ -1420,6 +1412,9 @@ msgstr "Favorits automàtics"
 #
 msgid "Automatic scan"
 msgstr "Escaneig automàtic"
+
+msgid "Automatically put the TV in standby whenever the receiver goes into standby or deep standby."
+msgstr "Col·loqueu el televisor automàticament en espera quan el receptor passi en espera o en espera profunda."
 
 msgid "Automatically start timeshift after"
 msgstr "Iniciar automàticament una hora després"
@@ -1527,6 +1522,9 @@ msgstr "Informació bàsica PID"
 
 msgid "Basque"
 msgstr "Basc"
+
+msgid "Before sending the command to switch the TV to standby, the receiver tests if all the other devices plugged to TV are in standby. If they are not, the 'sourceinactive' command will be sent to the TV instead of the 'standby' command."
+msgstr "Abans d’enviar l’ordre per canviar el televisor en espera, el receptor prova si tots els altres dispositius connectats al televisor estan en espera. Si no ho són, l’ordre “sourceinactive” s’enviarà al televisor en lloc de l’ordre “standby”."
 
 #
 msgid "Begin time"
@@ -2087,9 +2085,8 @@ msgid "Colombia"
 msgstr "Colombia"
 
 #
-#, fuzzy
 msgid "Color"
-msgstr "Colombia"
+msgstr "Color"
 
 #
 msgid "Color format"
@@ -2109,6 +2106,9 @@ msgstr "Execució del comandament …"
 #
 msgid "Command order"
 msgstr "Ordre de comanda"
+
+msgid "Command the TV to switch to the correct HDMI input when zap timers activate."
+msgstr "Ordeneu al televisor que canviï a l’entrada HDMI correcta quan s’activen els temporitzadors zap."
 
 msgid "Commit info"
 msgstr "Informació de publicació"
@@ -2654,6 +2654,9 @@ msgstr "Cuba"
 msgid "Curacao"
 msgstr "Curacao"
 
+msgid "Current"
+msgstr "Actual"
+
 msgid "Current CEC address"
 msgstr "Adreça actual del CEC"
 
@@ -2869,6 +2872,10 @@ msgstr "Configuració per defecte"
 msgid "Default timer type"
 msgstr "Tipus de temporitzador predeterminat"
 
+#
+msgid "Default+Picon"
+msgstr "Predeterminat + picó"
+
 msgid "Define the location of the EPG Cache file."
 msgstr "Definiu la ubicació del fitxer de memòria cau EPG."
 
@@ -2917,6 +2924,9 @@ msgstr "Retard abans que comenci la repetició de tecla:"
 msgid "Delay before sequence repeat"
 msgstr "Retardar abans de repetir la seqüència"
 
+msgid "Delay between CEC commands when sending a series of commands. Some devices require this delay for correct functioning, usually between 50-150ms."
+msgstr "Retard entre les ordres CEC quan s’envia una sèrie d’ordres. Alguns dispositius requereixen aquest retard per al funcionament correcte, normalment entre 50 i 150 ms."
+
 msgid "Delay between diseqc commands"
 msgstr "Retard entre les ordres de diseqc"
 
@@ -2940,9 +2950,12 @@ msgid "Delete"
 msgstr "Esborrar"
 
 #
-#, fuzzy
 msgid "Delete Image"
-msgstr "Ha fallat l'eliminació"
+msgstr "Ha fallat l’eliminació"
+
+#
+msgid "Delete all the text"
+msgstr "Suprimeix tot el text"
 
 #
 msgid "Delete entry"
@@ -2968,18 +2981,11 @@ msgstr "Esborrar entrada de la llista"
 msgid "Delete saved playlist"
 msgstr "Esborrar llista gravada"
 
-#
-#, fuzzy
-msgid "Delete the all the text"
-msgstr "Esborrar entrada de la llista"
-
-#, fuzzy
 msgid "Delete the character to the left of text cursor"
-msgstr "Suprimeix el caràcter a l’esquerra del cursor del buffer de text"
+msgstr "Suprimeix el personatge de l’esquerra del cursor de text"
 
-#, fuzzy
 msgid "Delete the character under the text cursor"
-msgstr "Suprimeix el caràcter del cursor del buffer de text"
+msgstr "Suprimeix el personatge sota el cursor de text"
 
 msgid "Delete timer"
 msgstr "Suprimeix el temporitzador"
@@ -2988,9 +2994,8 @@ msgid "Deleted"
 msgstr "Eliminat"
 
 #
-#, fuzzy
 msgid "Deleted image"
-msgstr "Ha fallat l'eliminació"
+msgstr "Imatge suprimida"
 
 msgid "Deleted items"
 msgstr "Elements eliminats"
@@ -3452,7 +3457,7 @@ msgstr "ERROR - ha fallat la recerca (%s)!"
 
 #, python-format
 msgid "ERROR downloading file %s"
-msgstr ""
+msgstr "ERROR baixant el fitxer% s"
 
 #
 msgid "East"
@@ -3529,6 +3534,9 @@ msgstr "Guia electrònica de programes"
 msgid "Embedded"
 msgstr "Incrustat"
 
+msgid "Emergency"
+msgstr "Emergencia "
+
 msgid "Empty slot"
 msgstr "Ranura buida"
 
@@ -3576,12 +3584,12 @@ msgstr "Habilita Virgin EPG"
 msgid "Enable auto cable scan"
 msgstr "Activa la exploració automàtica de cable"
 
-msgid "Enable auto fast scan"
-msgstr "Activa la exploració ràpida automàtica"
+msgid "Enable auto fastscan"
+msgstr "Activa l’exploració ràpida automàtica"
 
 #, python-format
-msgid "Enable auto fast scan for %s"
-msgstr "Activa la exploració ràpida automàtica per a% s"
+msgid "Enable auto fastscan for %s"
+msgstr "Activa l’exploració ràpida automàtica per a% s"
 
 #
 msgid "Enable bouquet edit"
@@ -3611,6 +3619,9 @@ msgstr "Activar mode moviment"
 #
 msgid "Enable multiple bouquets"
 msgstr "Activar llistes múltiples"
+
+msgid "Enable or disable using HDMI-CEC."
+msgstr "Activa HDMI-CEC."
 
 msgid "Enable parental protection"
 msgstr "Habilita la protecció dels pares"
@@ -3771,9 +3782,9 @@ msgid "Error"
 msgstr "Error"
 
 #
-#, fuzzy, python-format
+#, python-format
 msgid "Error %s"
-msgstr "Error"
+msgstr "Error %s"
 
 msgid "Error code"
 msgstr "Error codic"
@@ -3808,13 +3819,10 @@ msgid "Error stop stream!"
 msgstr "Error d’aturar el flux!"
 
 msgid "Error when writing epg.dat on server"
-msgstr ""
+msgstr "S’ha produït un error en escriure epg.dat al servidor"
 
-#, fuzzy
 msgid "Error while retreiving epg.dat from server"
-msgstr ""
-"S’ha produït un error en recuperar la informació del temporitzador de caiguda\n"
-"% s"
+msgstr "S’ha produït un error en recuperar la informació del temporitzador de caiguda"
 
 #, python-format
 msgid ""
@@ -3824,11 +3832,8 @@ msgstr ""
 "S’ha produït un error en recuperar la informació del temporitzador de caiguda\n"
 "% s"
 
-#, fuzzy
 msgid "Error while retreiving location of epg.dat on server"
-msgstr ""
-"S’ha produït un error en recuperar la informació del temporitzador de caiguda\n"
-"% s"
+msgstr "S’ha produït un error en recuperar la informació del temporitzador de caiguda"
 
 #
 #, python-format
@@ -4161,15 +4166,18 @@ msgstr "Ràpid"
 msgid "Fast DiSEqC"
 msgstr "DiSEqC ràpid"
 
-msgid "Fast Scan"
-msgstr "Escaneig ràpid"
-
 #
 msgid "Fast epoch"
 msgstr "Època ràpida"
 
 msgid "Fast forward speeds"
 msgstr "Velocitats d’avanç ràpides"
+
+msgid "FastScan"
+msgstr "Escaneig ràpid"
+
+msgid "Fastscan"
+msgstr "Escaneig ràpid"
 
 #
 msgid "Favourites"
@@ -4455,6 +4463,10 @@ msgstr "Anar a 0"
 msgid "Goto X"
 msgstr "Anar a X"
 
+#
+msgid "Goto down service"
+msgstr "Vés al servei"
+
 msgid "Goto index position"
 msgstr "Posició de l’índex de Goto"
 
@@ -4479,6 +4491,10 @@ msgstr "Anar horari / ara"
 
 msgid "Goto specific date/time"
 msgstr "Anar data / hora específica "
+
+#
+msgid "Goto up service"
+msgstr "Vés al servei"
 
 msgid "Goto:"
 msgstr "Anar:"
@@ -4773,6 +4789,9 @@ msgstr "Icones"
 msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
 msgstr "Si està desactivat, els caràcters subratllats en els noms de fitxers i directoris no es mostren i es substitueixen per espais."
 
+msgid "If enabled, a log will be kept of CEC protocol traffic ('hdmicec.log')"
+msgstr "Si està activat, es mantindrà un registre del trànsit del protocol CEC (‘hdmicec.log’)"
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr "Si està activat, les adreces d’interès s’actualitzaran amb la nova ubicació quan moveu o copieu una gravació."
 
@@ -4790,6 +4809,9 @@ msgstr "f es defineix com a “Sí”, i els audiòfils es reprodueixen només e
 
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
 msgstr "Si es defineix a “sí”, els valors de senyal (SNR, etc.) es calcularan a partir de l’API V3. Aquesta és una versió antiga de l’API que ara ha estat substituïda."
+
+msgid "If set to 'yes' the same commands will be sent to the TV for deep standby events, as are sent during regular standby events."
+msgstr "Si s’estableix a “sí”, s’enviaran les mateixes ordres al televisor per als esdeveniments d’espera profunda, com s’envien durant els esdeveniments d’espera habituals."
 
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
 msgstr "Si utilitzeu diversos interruptors no compromes, les ordres DiSEqC s’han d’enviar diverses vegades. Estableix el nombre de commutadors no comesos a la cadena menys un."
@@ -4834,6 +4856,9 @@ msgstr "Ignora la subxarxa de l’espai de noms DVB-T"
 
 msgid "Ignore conflict"
 msgstr "Ignora el conflicte"
+
+msgid "Image View On"
+msgstr "Imatge"
 
 #, python-format
 msgid ""
@@ -5733,37 +5758,29 @@ msgstr "Moure Picture in Picture"
 msgid "Move east"
 msgstr "Moure a l'est"
 
-#, fuzzy
 msgid "Move the keyboard cursor down"
-msgstr "Desplaceu el cursor del teclat virtual cap avall"
+msgstr "Desplaceu el cursor del teclat cap avall"
 
-#, fuzzy
 msgid "Move the keyboard cursor left"
-msgstr "Desplaceu el cursor del teclat virtual a l’esquerra"
+msgstr "Desplaceu el cursor del teclat a l’esquerra"
 
-#, fuzzy
 msgid "Move the keyboard cursor right"
-msgstr "Desplaceu el cursor del teclat virtual a la dreta"
+msgstr "Moveu el cursor al teclat cap a la dreta"
 
-#, fuzzy
 msgid "Move the keyboard cursor up"
-msgstr "Desplaceu el cursor del teclat virtual cap amunt"
+msgstr "Desplaceu el cursor cap amunt"
 
-#, fuzzy
 msgid "Move the text cursor left"
-msgstr "Desplaceu el cursor del buffer de text a l’esquerra"
+msgstr "Desplaceu el cursor de text a l’esquerra"
 
-#, fuzzy
 msgid "Move the text cursor right"
-msgstr "Desplaceu el cursor del buffer de text a la dreta"
+msgstr "Desplaceu el cursor de text cap a la dreta"
 
-#, fuzzy
 msgid "Move the text cursor to the first character"
-msgstr "Desplaceu el cursor del buffer de text al primer personatge"
+msgstr "Desplaceu el cursor de text al primer personatge"
 
-#, fuzzy
 msgid "Move the text cursor to the last character"
-msgstr "Desplaceu el cursor del buffer de text a l’últim personatge"
+msgstr "Desplaceu el cursor de text a l’últim personatge"
 
 msgid "Move to position X"
 msgstr "Desplaceu-vos a la posició X"
@@ -6084,7 +6101,7 @@ msgid "No displayable files on this medium found!"
 msgstr "No s’ha trobat fitxers que es mostrin en aquest mitjà"
 
 msgid "No epg.dat file found server"
-msgstr ""
+msgstr "No s’ha trobat cap servidor de fitxers epg.dat"
 
 #
 msgid "No event info found, recording indefinitely."
@@ -6115,10 +6132,6 @@ msgstr "No s’han trobat xarxes"
 
 msgid "No new plugins found"
 msgstr "No s’ha trobat cap complement nou"
-
-#
-msgid "No positioner capable frontend found."
-msgstr "No s'ha trobat cap motor."
 
 msgid "No priority"
 msgstr "Sense prioritat"
@@ -6156,10 +6169,6 @@ msgstr "No a tots"
 
 msgid "No transparency"
 msgstr "Sense transparència"
-
-#
-msgid "No tuner is configured for use with a diseqc positioner!"
-msgstr "No hi ha cap sintonitzador configurat per a utilitzar amb un motor diseqc!"
 
 #
 msgid ""
@@ -6406,13 +6415,13 @@ msgid "Open the movie list"
 msgstr "Llista de pel·lícules"
 
 msgid "Operating LED status in deep standby mode"
-msgstr ""
+msgstr "Funcionament de l’estat del LED en mode d’espera profunda"
 
 msgid "Operating LED status in standby mode"
-msgstr ""
+msgstr "Funcionament de l’estat del LED en mode d’espera"
 
 msgid "Operating LED status while running."
-msgstr ""
+msgstr "Funcionament de l’estat del LED mentre s’executa."
 
 msgid "Opkg"
 msgstr "Opkg"
@@ -6469,6 +6478,9 @@ msgstr "PGS File"
 
 msgid "PGS file"
 msgstr "PGS file"
+
+msgid "PID Filtering"
+msgstr "Filtratge PID"
 
 #
 msgid "PIN code needed"
@@ -6562,6 +6574,9 @@ msgstr "Pausa la reproducció"
 
 msgid "Pause/Continue playback"
 msgstr "Pausa la reproducció"
+
+msgid "Pending restart"
+msgstr "Pendent de reiniciar"
 
 msgid "Percentage left"
 msgstr "Percentatge restant"
@@ -7124,9 +7139,9 @@ msgid "Press OK on your remote control to continue."
 msgstr "Per continuar, premeu OK al comandament a distància."
 
 #
-#, fuzzy, python-format
-msgid "Press OK to activate the selected%s skin."
-msgstr "Premeu OK per activar el% s de pell seleccionat."
+#, python-format
+msgid "Press OK to activate the selected %s skin."
+msgstr "Premeu OK per activar el de %s pell seleccionat."
 
 #
 msgid "Press OK to activate the settings."
@@ -7142,9 +7157,9 @@ msgid "Press OK to get further details for %s"
 msgstr "Premeu OK per obtenir més detalls per a% s"
 
 #
-#, fuzzy, python-format
-msgid "Press OK to keep the currently selected%s skin."
-msgstr "Premeu OK per mantenir %s pell actualment seleccionada."
+#, python-format
+msgid "Press OK to keep the currently selected %s skin."
+msgstr "Premeu OK per mantenir el de %s pell actualment seleccionada."
 
 #
 msgid "Press OK to scan"
@@ -7163,6 +7178,10 @@ msgstr "Prem OK per a buscar."
 
 msgid "Press OK to select satellites"
 msgstr "Premeu OK per seleccionar satèl·lits"
+
+#
+msgid "Press OK to select the save location of the log file."
+msgstr "Seleccioneu el directori per al fitxer de registre."
 
 #
 msgid "Press OK to select/deselect a CAId."
@@ -7287,6 +7306,9 @@ msgstr "Puerto Rico"
 
 msgid "Purge deleted user bouquets"
 msgstr "Purgeu els bouquets d’usuari eliminats"
+
+msgid "Put A/V receiver to standby too."
+msgstr "Posar el receptor en espera."
 
 msgid "Put TV in standby"
 msgstr "Posa la televisió en espera"
@@ -7476,9 +7498,6 @@ msgstr "Regio"
 
 msgid "Relative"
 msgstr "Relatiu"
-
-msgid "Relevant PIDs routing"
-msgstr "Enrutament dels PID rellevants"
 
 #
 msgid "Reload"
@@ -7742,9 +7761,8 @@ msgstr "Restaura les còpies de seguretat"
 msgid "Restore defaults"
 msgstr "Restaurar els valors predeterminats"
 
-#, fuzzy
 msgid "Restore deleted images"
-msgstr "Restaureu els bouquets d’usuari eliminats"
+msgstr "Restaura les imatges suprimides"
 
 msgid "Restore deleted user bouquets"
 msgstr "Restaureu els bouquets d’usuari eliminats"
@@ -8285,10 +8303,6 @@ msgstr "Seleccionar una pel·lícula"
 msgid "Select a network adapter"
 msgstr "Selecciona interfície de xarxaSeleccioneu un adaptador de xarxa"
 
-#, fuzzy
-msgid "Select a skin"
-msgstr "Selecciona l’acció"
-
 #
 msgid "Select a tuner"
 msgstr "Seleccioneu un sintonitzador"
@@ -8415,13 +8429,11 @@ msgstr "Seleccioneu la freqüència de la banda d’usuari a assignar a aquest s
 msgid "Select the User Band to be assigned to this tuner. This is an index into the table of frequencies the SCR switch or SCR LNB uses to pass the requested transponder to the tuner."
 msgstr "Seleccioneu la Banda d’Usuari a assignar a aquest sintonitzador. Es tracta d’un índex a la taula de freqüències que l’interruptor SCR o SCR LNB utilitza per passar el transpondedor sol·licitat al sintonitzador."
 
-#, fuzzy
 msgid "Select the character or action under the keyboard cursor"
-msgstr "Seleccioneu el personatge o l’acció sota el cursor del teclat virtual"
+msgstr "Seleccioneu el personatge o l’acció sota el cursor del teclat"
 
-#, fuzzy
 msgid "Select the locale from a menu"
-msgstr "Seleccioneu la configuració regional del teclat virtual d’un menú"
+msgstr "Seleccioneu la configuració regional d’un menú"
 
 msgid "Select the manufacturer of your SCR device. If the manufacturer is not listed, set 'SCR' to 'user defined' and enter the device parameters manually according to its spec sheet."
 msgstr "Seleccioneu el fabricant del vostre dispositiu SCR. Si el fabricant no apareix a la llista, configureu “SCR” a “definit per l’usuari” i introduïu els paràmetres del dispositiu manualment segons la seva fitxa específica."
@@ -8454,16 +8466,14 @@ msgstr "Seleccioneu el satèl·lit que voleu configurar. Una vegada configurat a
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr "Seleccioneu el satèl·lit del qual rep el plat. Si no esteu segurs, seleccioneu “automàtic” i el receptor intentarà determinar-ho."
 
-#, fuzzy
 msgid "Select the shifted character set"
-msgstr "Seleccioneu el joc de caràcters desplaçat del teclat virtual"
+msgstr "Seleccioneu el joc de caràcters desplaçat"
 
-#, fuzzy
 msgid "Select the shifted character set for the next character only"
-msgstr "Seleccioneu el conjunt de caràcters canviats del teclat virtual per al personatge següent"
+msgstr "Seleccioneu el conjunt de caràcters desplaçat només per al següent personatge"
 
 msgid "Select the time zone within the area or region."
-msgstr ""
+msgstr "Seleccioneu el fus horari dins de la zona o regió."
 
 msgid "Select the tuner that controls the motorised dish."
 msgstr "Seleccioneu el sintonitzador que controla el plat motoritzat."
@@ -8527,9 +8537,8 @@ msgstr "Seleccioneu el vostre proveïdor i premeu D’acord per iniciar l’expl
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
 msgstr "Seleccioneu la vostra regió. Si no està disponible, canvieu “País” a “tot” i seleccioneu una de les alternatives per defecte."
 
-#, fuzzy
 msgid "Select your time zone area or region."
-msgstr "Seleccioneu resolució horitzontal:"
+msgstr "Seleccioneu la vostra zona o una regió."
 
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Selecció de satèl·lits 1 (USALS)"
@@ -8939,9 +8948,6 @@ msgstr "Mostra el reproductor multimèdia al menú principal"
 msgid "Show menu or plugin numbers"
 msgstr "Mostra els números del menú o del complement"
 
-msgid "Show menu paths"
-msgstr "Mostra les rutes del menú"
-
 msgid "Show message when recording starts"
 msgstr "Mostra el missatge quan comença la gravació"
 
@@ -8988,6 +8994,13 @@ msgstr "Mostra les icones del rellotge de registre"
 msgid "Show record indicator"
 msgstr "Mostra l’indicador de registre"
 
+#, fuzzy
+msgid "Show satellites list"
+msgstr "Mostra la llista de serveis"
+
+msgid "Show screen path"
+msgstr "Mostra el camí de la pantalla"
+
 msgid "Show screensaver"
 msgstr "Mostra el salvapantalles"
 
@@ -9031,6 +9044,9 @@ msgstr "Mostra els símbols a la pantalla"
 msgid "Show the radio player..."
 msgstr "Reproductor de ràdio..."
 
+msgid "Show the service information on two lines in the channel selection screen. You can choose between the current event description below the channel name, or the current event description next to the channel name, and the next event description on the second line."
+msgstr "Mostra la informació del servei en dues línies a la pantalla de selecció de canals. Podeu triar entre la descripció de l’esdeveniment actual a sota del nom del canal o la descripció de l’esdeveniment actual al costat del nom del canal i la següent descripció de l’esdeveniment a la segona línia."
+
 #
 msgid "Show the tv player..."
 msgstr "Mostrar el reproductor de tv..."
@@ -9038,6 +9054,9 @@ msgstr "Mostrar el reproductor de tv..."
 #
 msgid "Show transponder info"
 msgstr "Mostrar info del transponedor"
+
+msgid "Show two lines per entry"
+msgstr "Mostra dues línies per entrada"
 
 msgid "Show underline characters in filenames"
 msgstr "Show underline characters in filenames"
@@ -9125,6 +9144,10 @@ msgstr "Senzill"
 #
 msgid "Single EPG"
 msgstr "EPG senzill"
+
+#
+msgid "Single line mode"
+msgstr "Mode de línia única"
 
 #
 msgid "Single satellite"
@@ -9260,6 +9283,9 @@ msgstr "Illes Marshall"
 
 msgid "Somalia"
 msgstr "Somalia"
+
+msgid "Some TVs do not wake from standby when they receive the 'Image View On' command. If this is the case try the 'Text View On' command instead."
+msgstr "Alguns televisors no es desperten del mode d’espera quan reben l’ordre “Vista d’imatge activada”. En aquest cas, proveu l’ordre “Visualització de text activada”."
 
 #
 msgid "Some plugins are not available:\n"
@@ -9673,9 +9699,8 @@ msgstr "Selecció de subtítols…"
 msgid "Subtitle settings"
 msgstr "Configuració de subtítols"
 
-#, fuzzy
 msgid "Subtitle show/hide..."
-msgstr "Selecció de subtítols…"
+msgstr "Mostra / amaga subtítols …"
 
 #
 msgid "Subtitles"
@@ -9684,13 +9709,11 @@ msgstr "Subtítols"
 msgid "Subtitles Settings"
 msgstr "Configuració de Subtítols"
 
-#, fuzzy
 msgid "Subtitles disabled"
-msgstr "Configuració de Subtítols"
+msgstr "Subtítols desactivats"
 
-#, fuzzy
 msgid "Subtitles enabled"
-msgstr "Límits habilitats"
+msgstr "S’han activat els subtítols"
 
 msgid "Succeeded:"
 msgstr "Va tenir èxit:"
@@ -9705,6 +9728,13 @@ msgstr "Diu"
 #
 msgid "Sunday"
 msgstr "Diumenge"
+
+msgid ""
+"Sundtek - hardware blind scan in progress.\n"
+"Please wait(3-20 min) for the scan to finish."
+msgstr ""
+"Sundtek: exploració de cegues de maquinari en curs.\n"
+"Espereu (3-20 min) fins que finalitzi l’escaneig."
 
 #
 msgid "Suriname"
@@ -9752,17 +9782,14 @@ msgstr "Canviar el canal cap avall"
 msgid "Switch channel up"
 msgstr "Canvia el canal cap amunt"
 
-#, fuzzy
 msgid "Switch on the display during Standby Mode"
-msgstr "Mostra la llista d’extensions de visualització i d’interfície d’usuari disponibles."
+msgstr "Mostra la llista d’extensions de visualització i d’interfície d’usuari disponibles"
 
-#, fuzzy
 msgid "Switch on the display during Suspend Mode"
-msgstr "Mostra la llista d’extensions de visualització i d’interfície d’usuari disponibles."
+msgstr "Mostra la llista d’extensions de visualització i d’interfície d’usuari disponibles"
 
-#, fuzzy
 msgid "Switch on the display during operation."
-msgstr "Mostra la llista d’extensions de visualització i d’interfície d’usuari disponibles."
+msgstr "Enceneu la pantalla durant el funcionament."
 
 msgid "Switch to TV mode"
 msgstr "Canviar a la modalitat de TV"
@@ -9849,14 +9876,14 @@ msgid "T2MI RAW Mode"
 msgstr "T2MI  Mode voltatge"
 
 msgid "TEXT"
-msgstr ""
+msgstr "TEXT"
 
 #
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "angelo2807@hotmail.com—angelodos\n"
-"Traductor de enigma2 al español."
+"Traductor de enigma2 al catala."
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -9929,6 +9956,9 @@ msgstr "Pantalles de prova"
 msgid "Testscreens that are helpfull to fine-tune your display"
 msgstr "Proves de pantalla que serveixen per ajustar la pantalla"
 
+msgid "Text View On"
+msgstr "Visualització de text activada"
+
 msgid "Text color"
 msgstr "Color del text"
 
@@ -9968,6 +9998,9 @@ msgstr "El codi PIN s’ha desat correctament."
 
 msgid "The PIN codes you entered are different."
 msgstr "Els codis PIN que heu introduït són diferents."
+
+msgid "The command to wake from standby will be sent multiple times."
+msgstr "L’ordre de despertar des del mode d’espera s’enviarà diverses vegades."
 
 #, python-format
 msgid ""
@@ -10241,8 +10274,8 @@ msgstr "Aquesta opció us permet mostrar tots els símbols a la pantalla."
 msgid "This option allows you to show menu and/or plugin number quick links."
 msgstr "Aquesta opció ens permet mostrar tots els símbols a la pantalla."
 
-msgid "This option allows you to show menu paths."
-msgstr "Aquesta opció us permet mostrar les rutes del menú."
+msgid "This option allows you to show the full screen path leading to the current screen."
+msgstr "Aquesta opció us permet mostrar el camí de pantalla completa que condueix a la pantalla actual."
 
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "Aquesta opció us permet visualitzar la configuració antiga i la nova de costat."
@@ -10391,14 +10424,12 @@ msgid "Time scale"
 msgstr "Escala de temps"
 
 #
-#, fuzzy
 msgid "Time zone"
-msgstr "Zona horària"
+msgstr "Fus horari"
 
 #
-#, fuzzy
 msgid "Time zone area"
-msgstr "Zona horària"
+msgstr "Zona de la zona horària"
 
 #
 msgid "Timer"
@@ -10537,17 +10568,15 @@ msgstr "Commuta o inserta el text nou abans o sobreescriu el text existent"
 msgid "Toggle show/hide"
 msgstr "Commuta / amaga"
 
-#, fuzzy
 msgid "Toggle subtitles show/hide"
-msgstr "Commuta / amaga"
+msgstr "Activa / amaga els subtítols"
 
 msgid "Toggle the tv and the radio player..."
 msgstr "Canvia la televisió i el reproductor de ràdio …"
 
 #
-#, fuzzy
 msgid "Toggle videomode"
-msgstr "Selecciona la manera de vídeo"
+msgstr "Commuta el videomode"
 
 msgid "Togo"
 msgstr "Togo"
@@ -10732,6 +10761,12 @@ msgstr "Tuvalu"
 #
 msgid "Two"
 msgstr "Dos"
+
+msgid "Two lines"
+msgstr "Dues línies"
+
+msgid "Two lines and next event"
+msgstr "Dues línies i proper esdeveniment"
 
 #
 msgid "Type"
@@ -10919,6 +10954,9 @@ msgstr "Actualització del catàleg de programari"
 
 msgid "Upper case"
 msgstr "Majúscula"
+
+msgid "Uptime"
+msgstr "Horaris"
 
 msgid "Uruguay"
 msgstr "Uruguai"
@@ -11276,6 +11314,9 @@ msgstr "Volum"
 msgid "Volume down"
 msgstr "Volum abaix"
 
+msgid "Volume keys on the receiver remote will control the TV volume."
+msgstr "Les tecles de volum del comandament a distància del receptor controlaran el volum del televisor."
+
 msgid "Volume up"
 msgstr "Volum a dalt"
 
@@ -11319,11 +11360,20 @@ msgstr "En espera de la partició"
 msgid "Wake On LAN"
 msgstr "En espera de la partició"
 
+msgid "Wake the receiver from standby when selected wake command is sent from the TV."
+msgstr "Desactiveu el receptor des del mode d’espera quan s’enviï des del televisor l’ordre seleccionat."
+
 msgid "Wakeup"
 msgstr "Desperta"
 
+msgid "Wakeup A/V receiver from standby too."
+msgstr "Receptor de despertador del mode d’espera."
+
 msgid "Wakeup TV from standby"
 msgstr "TV despertador des del mode d’espera"
+
+msgid "Wakeup command for TV"
+msgstr "Ordre de despertador per al televisor"
 
 msgid "Wakeup receiver for start timer"
 msgstr "Receptor de despertador per temporitzador d’inici"
@@ -11450,6 +11500,12 @@ msgstr "Quan està activada, la finestra Picture in Picture és pot tancar amb e
 msgid "When enabled the left, right, CH+/-, B+/-, P+/- buttons will follow the 'neutrino' style zap controls instead of the enigma2 style."
 msgstr "Quan estiguin habilitats els botons esquerre, dret, CH +/-, B +/-, P +/- seguiran els controls zap a l’estil ‘neutrino’ en lloc de l’estil enigma2."
 
+msgid "When enabled the receiver will automatically return to standby when the TV is turned off."
+msgstr "Quan estigui activat, el receptor tornarà automàticament al mode d’espera quan el televisor estigui apagat."
+
+msgid "When enabled the receiver will automatically wake from standby when the TV is turned on."
+msgstr "Quan està activat, el receptor es despertarà automàticament del mode d’espera quan el televisor estigui engegat."
+
 msgid "When enabled the set top box is able to wakeup on LAN"
 msgstr "Quan està activat, la caixa superior establerta és capaç de despertar-se a LAN"
 
@@ -11555,6 +11611,9 @@ msgstr "Quan està activat, els fluxos http es canvien al servidor. El receptor 
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "Quan està activat, els fluxos http poden ser distribuïts al servidor. El receptor del client (remot) no té cap remuntament sense cap fer. Per defecte, està activat."
 
+msgid "When enabled, it will automatically play to the last saved radio service when switching to radio mode."
+msgstr "Quan estigui activat, es reproduirà automàticament a l’últim servei de ràdio desat en canviar al mode de ràdio."
+
 msgid "When enabled, measure power consumption to detect when the rotor stops turning (when supported by the tuner)."
 msgstr "Quan estigui habilitat, mesura el consum d’energia per detectar quan el rotor deixa de girar (quan és compatible amb el sintonitzador)."
 
@@ -11636,6 +11695,9 @@ msgstr "Quan no sigui zero, una gravació començarà abans que l’hora d’ini
 msgid "When nonzero, a recording will stop later than the ending time indicated by the EPG."
 msgstr "Si no sigui zero, una gravació s’aturarà més tard que l’hora de finalització indicada per l’EPG."
 
+msgid "When receiver wakes from standby, it will command the TV to switch to the HDMI input the receiver is connected to."
+msgstr "Quan el receptor es desperta en espera, manarà al televisor canviar a l’entrada HDMI a la qual està connectat el receptor."
+
 msgid "When selected this allows video modes to be selected even if they are not reported as supported."
 msgstr "Si es selecciona, això permet seleccionar els modes de vídeo, fins i tot si no s’informa de què és compatible."
 
@@ -11644,6 +11706,9 @@ msgstr "Quan el contingut tingui una relació d’aspecte de 16: 9, trieu si vol
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
 msgstr "Quan el contingut tingui una relació d’aspecte de 4: 3, trieu si voleu escalar / estirar la imatge."
+
+msgid "When the receiver wakes from standby or deep standby, it will send a command to the TV to bring it out of standby too."
+msgstr "Quan el receptor es desperta en mode d’espera o d’espera profunda, enviarà una ordre al televisor per treure’l també del mode d’espera."
 
 #
 msgid "Where to save temporary timeshift recordings?"
@@ -11678,20 +11743,17 @@ msgstr "Amb errors:"
 msgid "With popup"
 msgstr "Amb finestra emergent"
 
-#, fuzzy
 msgid "With this option you can switch on the display during operation."
-msgstr "Aquesta opció us permet apagar la pantalla."
+msgstr "Amb aquesta opció, podeu activar la pantalla durant el funcionament."
 
-#, fuzzy
 msgid "With this option you can switch on the display in Deep Standby Mode."
-msgstr "Aquesta opció us permet apagar la pantalla."
+msgstr "Amb aquesta opció, podeu activar la pantalla en mode d’espera profunda."
 
-#, fuzzy
 msgid "With this option you can switch on the display in Standby Mode."
-msgstr "Aquesta opció us permet apagar la pantalla."
+msgstr "Amb aquesta opció, podeu activar la pantalla en mode d’espera."
 
 msgid "With this option you can switch the LED color or deactivate the LED."
-msgstr ""
+msgstr "Amb aquesta opció, podeu canviar el color del LED o desactivar el LED."
 
 msgid "Without popup"
 msgstr "Sense aparició"
@@ -11894,7 +11956,7 @@ msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Heu de canviar al servei% s (% s - ‘% s’).\n"
 
 msgid "You seem to be in timeshift!"
-msgstr ""
+msgstr "Amb aquesta opció, podeu canviar el color del LED o desactivar el LED."
 
 #
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
@@ -12099,6 +12161,9 @@ msgstr "actiu"
 
 msgid "actual time only"
 msgstr "temps real només"
+
+msgid "additional cable of rotor"
+msgstr "cable addicional de rotor"
 
 msgid "adult movie/drama"
 msgstr "pel·lícula / drama per a adults"
@@ -12878,6 +12943,9 @@ msgstr "rock/pop"
 msgid "romance"
 msgstr "romanç"
 
+msgid "rotor"
+msgstr "rotor"
+
 msgid "running"
 msgstr "corrent"
 
@@ -13138,7 +13206,7 @@ msgid "vertical"
 msgstr "vertical"
 
 msgid "violet"
-msgstr ""
+msgstr "violeta"
 
 #
 msgid "wait for ci..."
