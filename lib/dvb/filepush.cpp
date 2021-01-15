@@ -34,6 +34,7 @@ eFilePushThread::~eFilePushThread()
 
 static void signal_handler(int x)
 {
+	eDebug("[eFilePush] SIGUSR1 received");
 }
 
 static void ignore_but_report_signals()
@@ -328,16 +329,18 @@ void eFilePushThreadRecorder::thread()
 	ssize_t bytes;
 	int rv;
 	struct pollfd pfd;
-
-	setIoPrio(IOPRIO_CLASS_RT, 7);
+	sigset_t sigmask;
 
 	eDebug("[eFilePushThreadRecorder] THREAD START");
 
-	/* we set the signal to not restart syscalls, so we can detect our signal. */
-	struct sigaction act;
-	act.sa_handler = signal_handler; // no, SIG_IGN doesn't do it. we want to receive the -EINTR
-	act.sa_flags = 0;
-	sigaction(SIGUSR1, &act, 0);
+	setIoPrio(IOPRIO_CLASS_RT, 7);
+
+	/* Only allow SIGUSR1 to be delivered to our thread, don't let any
+	 * other signals (like SIGHCHLD) interrupt our system calls.
+	 * NOTE: signal block masks are per thread, so set it in the thread itself. */
+	sigfillset(&sigmask);
+	sigdelset(&sigmask, SIGUSR1);
+	pthread_sigmask(SIG_SETMASK, &sigmask, nullptr);
 
 	hasStarted();
 
@@ -363,7 +366,10 @@ void eFilePushThreadRecorder::thread()
 				if(rv < 0)
 				{
 					if(errno == EINTR)
+					{
+						eDebug("[eFilePushThreadRecorder] poll got interrupted by signal, stop: %d", m_stop);
 						continue;
+					}
 
 					eWarning("[eFilePushThreadRecorder] POLL ERROR, aborting thread: %m");
 					sendEvent(evtWriteError);
@@ -402,7 +408,10 @@ void eFilePushThreadRecorder::thread()
 			}
 
 			if (errno == EINTR || errno == EBUSY)
+			{
+				eDebug("[eFilePushThreadRecorder] read got interrupted by signal, stop: %d", m_stop);
 				continue;
+			}
 
 			if (errno == EOVERFLOW)
 			{
@@ -444,6 +453,19 @@ void eFilePushThreadRecorder::start(int fd)
 	m_fd_source = fd;
 	m_stop = 0;
 	m_stopped = false;
+
+	/* Use a signal to interrupt blocking systems calls (like read()).
+	 * We don't want to get enigma killed by the signal (default action),
+	 * so install a handler. Don't use SIG_IGN (ignore signal) because
+	 * then the system calls won't be interrupted by the signal.
+	 * NOTE: signal options and handlers (except for a block mask) are
+	 * global for the process, so install the handler here and not
+	 * in the thread. */
+	struct sigaction act;
+	act.sa_handler = signal_handler;
+	act.sa_flags = 0;
+	sigaction(SIGUSR1, &act, nullptr);
+
 	run();
 }
 
@@ -454,7 +476,10 @@ void eFilePushThreadRecorder::stop()
 	int safeguard;
 
 	if (m_stop == 1)
+	{
+		eDebug("[eFilePushThreadRecorder] requesting to stop thread but thread is already stopped");
 		return;
+	}
 
 	m_stop = 1;
 
